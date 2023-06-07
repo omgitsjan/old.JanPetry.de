@@ -18,8 +18,7 @@ export interface Post extends ParsedContent {
   nav?: boolean
   status?: 'sponsors-only' | 'unlisted' | 'published'
 }
-export interface Page extends Post {
-}
+export interface Page extends Post {}
 
 export interface JsonParsedContent<T> extends ParsedContent {
   body: T
@@ -32,6 +31,7 @@ export interface Project {
   updatedAt: string
   stars: number
   icon?: string
+  link?: string
 }
 
 export interface ProjectList extends ParsedContent {

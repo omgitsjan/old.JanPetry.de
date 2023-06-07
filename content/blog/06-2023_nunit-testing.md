@@ -1,9 +1,9 @@
 ---
-title: "May 2023: South Korea Mountains and Unlighthouse Goes Viral"
-description: "What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules."
+title: 'bUnit Testing: How can i Test Razor Views in Blazor'
+description: 'What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules.'
 publishedAt: '2023-06-01'
-publishOn: '2023-06-10'
-status: sponsors-only
+publishOn: '2023-06-01'
+# status: sponsors-only
 aside: false
 excerpt: 'What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules.'
 tags:
@@ -51,12 +51,13 @@ We'll spend the next month here, until mid-June when we head back to Australia.
 
 We're taking Indonesia pretty slow.
 It's nice to have a bit of a break after the busy itinerary in South Korea and Thailand.
+
 - Yogyakarta - University town, lots of culture, art and history. Hostels here have a really nice, social vibe.
 - Bali - Ubud and Canggu.
   Canggu is very touristy, but the food is worth it.
   Melbourne Cafe tier.
   Ubud is quite touristy too, but you can see some
-amazing sights around like rice fields, temples and waterfalls.
+  amazing sights around like rice fields, temples and waterfalls.
 - Gili Islands - Good snorkeling and chilling. (currently here)
 - Flores - Planning lots of hikes for here. We're looking forward to Komodo National Park and Kelimutu volcano.
 
@@ -116,7 +117,7 @@ It's given me a lot of ideas for how to improve it, and I'm excited to work on i
 
 ### Open-Source
 
-- ⌛ 84 hrs  (+13.25 hrs)
+- ⌛ 84 hrs (+13.25 hrs)
 - 💸 $744 AUD (-$269) - Payout from Windi CSS the month before.
 - $8.85 AUD / hour (-$5.46 / hour)
 
@@ -159,7 +160,7 @@ I'll use this time to focus on getting Nuxt SEO Kit v2 released.
 
 ## Final thoughts
 
-I'm really grateful to see the growth in Unlighthouse this month, 
+I'm really grateful to see the growth in Unlighthouse this month,
 and I'm excited to finally release what I've been working on the for the last few months.
 
 Thanks as always to my amazing sponsors.

@@ -5,7 +5,7 @@ icon: line-md:heart
 navigation: true
 prose: true
 ---
-  
+
 ## My Partners
 
 Through my amazing partners, I'm able to dedicate a lot of my time to working on Projects i love.
@@ -13,7 +13,6 @@ Through my amazing partners, I'm able to dedicate a lot of my time to working on
 Thank you to all of them!
 
 List comming soon...
-  
 
 ## Get in touch
 
