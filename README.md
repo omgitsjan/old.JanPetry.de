@@ -1,38 +1,12 @@
-[![harlanzw.com](https://repository-images.githubusercontent.com/498703201/39a4dfce-bed2-48d9-9777-a076fb0f000f)](https://harlanzw.com)
+[![janpetry.de](https://repository-images.githubusercontent.com/498703201/39a4dfce-bed2-48d9-9777-a076fb0f000f)](https://janpetry.de/)
 
-# harlanzw.com
+# janpetry.de
 
-My personal website built with Nuxt 3, powered by [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit) and [Docus](https://docus.dev).
+This is my personal website, built using Nuxt 3 and powered by [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit) as well as [Docus](https://docus.dev/).
 
-Built as reference for optimal Nuxt code practices, SEO, performance and accessibility.
+The website is designed as a reference point for best practices with Nuxt code, SEO, performance, and accessibility.
 
-## Features
-
-- 🔎 Automated Schema.org
-- 📚 Markdown read time calculation
-- 👨‍💻 Code file name and language support
-- 🧩 Automatic Server Side Icon Resolving (no FOUC), powered by iconify & unplugin-icons 
-- 🤖 Sitemap.xml and feed generation
-- 🍞 Automatic breadcrumbs (with Schema.org)
-- 🤝 Integrated with @nuxt/image, images served with [cloudinary](https://cloudinary.com)
-
-## More Features
-
-- Automatic routes based on content /w 404 handling
-- Automatic navigation generation
-- Easy content composables
-- Fully typed content
-- Split pages/posts for easier content organisation
-- [line-md](https://github.com/cyberalien/line-md) icons by cyberalien
-
-## Plus
-
-- pnpm
-- WindiCSS
-- Eslint with @antfu/eslint-config
-- SEO / i18n best practices
-- Fathom analytics
-- Vercel hosted
+Please note that this repository is mainly a personalized configuration of the original project created by Harlan Zwierlein (harlan-zw). Most of the credit for this project should be attributed to him. If you are interested in the original project, I highly recommend checking out his work.
 
 ## Setup
 
