@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: '[DE] Einführung in das .NET Testing: Ein kleiner Überblick'
 description: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 publishedAt: '2023-06-01'
@@ -188,3 +189,186 @@ Weitere Quellen:
 [Unit Testing: Moq Framework | Microsoft Learn](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/unit-testing-moq-framework)
 
 [Best practices for writing unit tests - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+=======
+<<<<<<<< HEAD:content/blog/4.2023-may.md
+title: "May 2023: South Korea Mountains and Unlighthouse Goes Viral"
+description: "May was spent traveling to South Korea and Indonesia while working on Unlighthosue going viral."
+publishedAt: '2023-06-01'
+========
+title: 'bUnit Testing: How can i Test Razor Views in Blazor'
+description: 'What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules.'
+publishedAt: '2023-06-01'
+publishOn: '2023-06-01'
+# status: sponsors-only
+>>>>>>>> 127c4e2 (More personalization):content/blog/06-2023_nunit-testing.md
+aside: false
+excerpt: 'May was spent traveling to South Korea and Indonesia while working on Unlighthosue going viral.'
+ogImage:
+  image: /may-seoul-exploring.png
+tags:
+  - newsletter
+---
+
+I'm traveling the world with my girlfriend, Alina, while working on open-source.
+
+Catch up on what you might have missed:
+- [March 2023: Planning a year of travel and moving out](/blog/2023-march)
+- [April 2023: Thai New Year and Nuxt SEO Progress](/blog/2023-april)
+
+## Personal Updates
+
+### South Korea Travel
+
+In May, we finished up our time in Thailand and traveled to South Korea for 2 weeks.
+
+- Seoul - Amazing city with so much to do. The culture is very unique and the mountains surrounding the city are beautiful.
+- Busan - Coastal city, kind of reminded me of the Gold Coast in Australia.
+- Jeju - Island off the south coast of South Korea. Beautiful beaches and hiking.
+
+We really loved the food, especially the Korean BBQ and bipimbap.
+
+They had surprisingly good coffee, craft beer and pastries, which I partook in generously.
+
+Hiking Bukhansan Mountain in Seoul and Hallasan Mountain in Jeju were definitely the highlights.
+
+I would love to return one day and explore more of the country.
+
+<Expand>
+<div class="md:grid hidden grid-cols-2 gap-8 my-15">
+<Image src="/may-jeju-coffee.png" alt="Open-source and coffee on Jeju"  no-margin />
+<Image src="/may-black-pork.png" alt="Black pork and mungbean on Jeju"  no-margin />
+<Image src="/may-bukhansan.png" alt="Top of Buhkansan Mountain" no-margin />
+<Image src="/may-seoul-exploring.png" alt="Exploring Seoul At Night"  no-margin />
+</div>
+</Expand>
+
+<div class="md:hidden block">
+<Image src="/may-jeju-coffee.png" alt="Open-source and coffee on Jeju" />
+<Image src="/may-black-pork.png" alt="Black pork and mungbean on Jeju" />
+<Image src="/may-bukhansan.png" alt="Top of Buhkansan Mountain" />
+<Image src="/may-seoul-exploring.png" alt="Exploring Seoul At Night" />
+</div>
+
+### Indonesia Travel
+
+After South Korea, we flew to Jakarta, Indonesia with a quick stop over in Singapore.
+We'll spend the next month here, until mid-June when we head back to Australia.
+
+We're taking Indonesia pretty slow.
+It's nice to have a bit of a break after the busy itinerary in South Korea and Thailand.
+
+- Yogyakarta - University town, lots of culture, art and history. Hostels here have a really nice, social vibe.
+- Bali - Ubud and Canggu.
+  Canggu is very touristy, but the food is worth it.
+  Melbourne Cafe tier.
+  Ubud is quite touristy too, but you can see some
+  amazing sights around like rice fields, temples and waterfalls.
+- Gili Islands - Good snorkeling and chilling. (currently here)
+- Flores - Planning lots of hikes for here. We're looking forward to Komodo National Park and Kelimutu volcano.
+
+<Expand>
+<div class="md:grid hidden grid-cols-2 gap-8 my-15">
+<Image src="/may-indo-temple" alt="Borobudur temple in Yogyakarta" no-margin />
+<Image src="/may-sate.png" alt="Top tier sate"  no-margin />
+<Image src="/may-jungle.png" alt="Jungles around Sideman" no-margin />
+<Image src="/may-cave.png" alt="Goa Gajah temple"  no-margin />
+</div>
+</Expand>
+
+<div class="md:hidden block">
+<Image src="/may-indo-temple" alt="Borobudur temple in Yogyakarta" />
+<Image src="/may-sate.png" alt="Top tier sate" />
+<Image src="/may-jungle.png" alt="Jungles around Sideman" />
+<Image src="/may-cave.png" alt="Goa Gajah temple" />
+</div>
+
+## Work Updates
+
+### Unlighthouse Goes Viral
+
+Last month I had a DM from someone telling me that they had put Unlighthouse front of Jeff from Fireship.
+
+I thought that was pretty cool in of itself, and I didn't think much more about it.
+
+Next thing I knew, though, the Unlighthouse stars started going bananas.
+
+<Image src="/may-unlighthouse-stars.png" alt="Unlighthouse stars going bananas" />
+
+I did some quick research and found the culprit.
+
+<iframe loading="lazy" class="max-w-full w-full" width="560" height="315" src="https://www.youtube.com/embed/0fONene3OIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Very cool.
+
+And with that, I had a massive influx of issues to deal with through GitHub and my Discord.
+
+<Image src="/may-unlighthouse-issues.png" alt="Unlighthouse issues also going bananas" />
+
+I started working through them, I would solve one, and two more would appear.
+It took me the rest of my May to get control of them.
+
+It wasn't a bad problem to have though.
+I'm grateful to have Unlighthouse being used by so many people, and I'm glad it's helping people improve their sites.
+
+It's given me a lot of ideas for how to improve it, and I'm excited to work on it more in the future.
+
+## Numbers / Financials
+
+- ⭐ 5407 GitHub stars (+1628)
+
+<Image src="/may-wakatime.png" alt="My WakaTime numbers for May 2023" />
+
+<Image src="/may-fathom.png" alt="My May 2023 Fathom Traffic" />
+
+### Open-Source
+
+- ⌛ 84 hrs (+13.25 hrs)
+- 💸 $744 AUD (-$269) - Payout from Windi CSS the month before.
+- $8.85 AUD / hour (-$5.46 / hour)
+
+**Main projects**
+
+- **27 hours [Unlighthouse](https://github.com/harlan-zw/unlighthouse)**
+
+Some important improvements around reporting, authentication, how the chrome binary is used and Docker.
+
+- **23 hours [nuxt-seo-kit](https://github.com/nuxt/nuxt)**
+
+Extracting the breadcrumbs and site config logic into separate modules in preparation of v2. These will be released soon.
+
+- **8 hours [nuxt-og-image](https://github.com/harlan-zw/nuxt-og-image)**
+
+Getting the final issues solved so the v2 release can happen.
+
+- **7.5 hours [nuxt-simple-sitemap](https://github.com/harlan-zw/nuxt-simple-sitemap)**
+
+Some outstanding issues around runtime sitemaps and i18n.
+
+### Freelancing
+
+- ⌛ 8.25 hrs (+0.75 hrs)
+- 💸 $1,025 AUD (+$800)
+- $124.24 AUD / hour (+24.24 / hour)
+
+I started some SEO work for a new client.
+
+The work was to fix site-wide technical issues from Google Lighthouse.
+This is exactly why I originally built Unlighthouse,
+so it was perfect.
+
+## June plans
+
+I'll be landing back in Australia toward the middle of June.
+
+I look forward to having a few weeks of routine.
+I'll use this time to focus on getting Nuxt SEO Kit v2 released.
+
+## Final thoughts
+
+I'm really grateful to see the growth in Unlighthouse this month,
+and I'm excited to finally release what I've been working on the for the last few months.
+
+Thanks as always to my amazing sponsors.
+See you next month.
+.
+>>>>>>> 229ed77 (More personalization)
