@@ -1,11 +1,11 @@
 ---
-title: 'bUnit Testing: How can i Test Razor Views in Blazor'
-description: 'What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules.'
+title: 'bUnit Testing: How Can I Test Razor Views In Blazor'
+description: 'A small Blog article on what is bUnit and how its work in Blazor.'
 publishedAt: '2023-06-01'
-publishOn: '2023-06-01'
-# status: sponsors-only
+publishOn: '2023-06-15'
+status: sponsors-only
 aside: false
-excerpt: 'What I got up to in April 2023, including traveling to Thailand and working through a bunch of bugs in my SEO modules.'
+excerpt: 'A small Blog article on what is bUnit and how its work in Blazor.'
 tags:
   - newsletter
 ---

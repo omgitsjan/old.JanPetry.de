@@ -48,6 +48,9 @@ devDependencies:
   '@iconify-json/noto':
     specifier: ^1.1.11
     version: 1.1.11
+  '@iconify-json/octicon':
+    specifier: ^1.1.40
+    version: 1.1.40
   '@iconify-json/ph':
     specifier: ^1.1.5
     version: 1.1.5
@@ -962,6 +965,12 @@ packages:
 
   /@iconify-json/noto@1.1.11:
     resolution: {integrity: sha512-XRQa8al8GKiDm8j/wqR7kU5IQ7SNCB9h3qhqSZ7uZ8YSOZfOdNuYTlyakhEKUHAiXKjfRldoBkhtl+sVNyqSPQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/octicon@1.1.40:
+    resolution: {integrity: sha512-Pvw/Pcxfpk0dw9PWzSeiex+uIRh2aEzek951YfGJ5JwCj0g+QGxOt7Lv5kaMvuhd37Dme3K9vN/479yX/6IABw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

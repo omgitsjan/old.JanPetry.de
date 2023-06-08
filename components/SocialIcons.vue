@@ -2,7 +2,7 @@
   <div>
     <NuxtLink
       target="_blank"
-      href="https://twitter.com/omgitsjan"
+      href="https://twitter.com/omg_itsjan"
       title="Visit my Twitter"
       class="group"
     >

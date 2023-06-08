@@ -24,7 +24,7 @@
         {
           "name": "BioImpulse.de",
           "repo": "omgitsjan/BioPulse",
-          "icon": "ic:round-terminal"
+          "icon": "fluent-emoji-flat:purple-heart"
         },
         {
           "name": "IanPRTZ.de",
@@ -36,7 +36,7 @@
           "repo": "JPProfessionals/jpp-homepage",
           "description": "Private Nuxt3 Project, you can find the website under jpprofessionals.de.",
           "link": "https://jpprofessionals.de/",
-          "icon": "lucide:triangle"
+          "icon": "game-icons:laser-burst"
         },
         {
           "name": "JPP Backend",
@@ -68,7 +68,7 @@
           "icon": "ic:round-terminal"
         },
         {
-          "name": "IanPRTZ.de",
+          "name": "DiscordBot",
           "repo": "maxsteinwand/DiscordBot",
           "description": "Old Discord Bot Project. This project is no longer maintained.",
           "icon": "ic:round-terminal"
