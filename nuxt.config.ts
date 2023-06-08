@@ -30,7 +30,9 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  devtools: true,
+  devtools: {
+    isEnabled: true,
+  },
 
   pinceau: {
     configFileName: 'tokens.config',
@@ -41,15 +43,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      // fathom analytics
-      script: [
-        {
-          src: 'https://idea-lets-dance.harlanzw.com/script.js',
-          'data-spa': 'auto',
-          'data-site': 'VDJUVDNA',
-          defer: true,
-        },
-      ],
       link: [
         {
           rel: 'apple-touch-icon',
@@ -103,5 +96,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/', '/feed.xml', '/feed.json', '/feed.atom'],
     },
+    preset: 'service-worker',
   },
 })

@@ -57,7 +57,7 @@ const initialStyles = {
       />
       <div class="flex text-gray-700 flex-col">
         <span class="text-green-700 font-bold" :style="initialStyles">
-          Harlan Wilton
+          Jan Petry
         </span>
       </div>
     </div>

@@ -18,4 +18,4 @@ List comming soon...
 
 Heard from me? Heck yeah!
 
-Why not get in touch with me by following my [Twitter](https://twitter.com/omgitsjan), or joining my [Discord](https://discord.com/invite/janslounge).
+Why not get in touch with me by following my [Twitter](https://twitter.com/omg_itsjan), or joining my [Discord](https://discord.com/invite/janslounge).
