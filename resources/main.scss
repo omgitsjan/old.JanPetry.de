@@ -144,3 +144,7 @@ a:not(.unstyled),
 .icon--on {
   @apply hidden group-hover:inline-block;
 }
+
+.top--15{
+  top: -15px;
+}

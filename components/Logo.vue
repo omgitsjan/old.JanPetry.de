@@ -52,7 +52,7 @@ const initials = siteMeta.name
 .logo {
   transform: skewX(-10deg);
   font-weight: 400;
-  transition: 0.2s;
+  transition: 0.25s;
   background: linear-gradient(90deg, rgba(#11998e, 0.3), rgba(#38ef7d, 0.3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

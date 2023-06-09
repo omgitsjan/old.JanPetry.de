@@ -37,19 +37,21 @@ const icon = computed(() => {
       return 'logos:typescript-icon'
     case 'webpack':
       return 'logos:webpack'
+      case 'dotnet':
+      return 'skill-icons:dotnet'
     case 'newsletter':
       return 'line-md:email-twotone'
     default:
-      return ''
+      return 'line-md:hash-small'
   }
 })
 </script>
 
 <template>
-  <div :title="title" class="flex items-center">
-    <Icon :name="icon" :class="small ? '!h-4 !w-4' : '!h-6 !w-6'" />
-    <div v-if="!small" class="ml-1.5 text-sm">
-      {{ title }}
+    <div :title="title" class="flex items-center">
+      <Icon :name="icon" :class="small ? '!h-4 !w-4' : '!h-6 !w-6'" />
+      <div v-if="!small" class="ml-1.5 text-sm">
+        {{ title }}
+      </div>
     </div>
-  </div>
 </template>

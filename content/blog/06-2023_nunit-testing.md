@@ -2,15 +2,14 @@
 title: '[DE] Einführung in das .NET Testing: Ein kleiner Überblick'
 description: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 publishedAt: '2023-06-01'
-publishOn: '2023-06-15'
+publishOn: '2023-06-14'
 status: sponsor-only
 aside: false
 excerpt: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 tags:
-  - newsletter
-  - dotnet
-  - testing
-  - nunit
+    - newsletter
+    - tests
+    - dotnet
 ---
 
 Inhalt
@@ -32,13 +31,13 @@ Das NUnit-Framework ist ein weit verbreitetes Tool in der .NET Welt und dient zu
 
 Andere verbreitete .NET Testframeworks sind z. B. xUnit und MSTest. Alle drei haben ihre Stärken und Schwächen und die Wahl hängt oft von den Anforderungen und des Projekts und der eigenen Erfahrung mit den Frameworks ab. Heute wollen wir uns aber, wie schon erwähnt, nur auf NUnit als Framework konzentriert.
 
-In NUnit verwenden wir Attribute, um Testmethoden zu kennzeichnen und ihren Ablauf zu steuern. Schauen wir uns zunächst an, was Attributen überhaupt sind. Diese gibt es neuerdings auch in Delphi, ich kann nur leider nicht genau sagen, wie gut sie dort implementiert sind, aber in .NET vereinfachen sie nicht nur, sondern helfen aktiv besseren Code zu schreiben. Sie annotieren den Code und können zur Laufzeit Verhalten beeinflussen.
+In NUnit verwenden wir Attribute, um Testmethoden zu kennzeichnen und ihren Ablauf zu steuern. Schauen wir uns zunächst an, was Attributen überhaupt sind. In .NET vereinfachen sie nicht nur, sondern helfen aktiv besseren Code zu schreiben. Sie annotieren den Code und können zur Laufzeit Verhalten beeinflussen.
 
 ## Was sind also jetzt genau Attribute?
 
-In beiden Programmiersprachen, .NET und Delphi, können Attribute dazu verwendet werden, zusätzliche Informationen zu Codeelementen wie Klassen, Methoden oder Eigenschaften zu liefern. Sie können als eine Form der Metadaten betrachtet werden, die während der Laufzeit über Reflexion abgerufen werden können.
+In .NET können Attribute dazu verwendet werden, zusätzliche Informationen zu Codeelementen wie Klassen, Methoden oder Eigenschaften zu liefern. Sie können als eine Form der Metadaten betrachtet werden, die während der Laufzeit über Reflexion abgerufen werden können.
 
-In .NET wird das Konzept der Attribute durch den Einsatz von eckigen Klammern dargestellt (in Delphi sind diese geschwungene). Ein Attribut kann Parameter haben und kann auf verschiedene Codeelemente angewendet werden. Beispielsweise kann das `[Required]` Attribut dazu verwendet werden, anzugeben, dass eine Eigenschaft für das Model in einer Form erforderlich ist.
+In .NET wird das Konzept der Attribute durch den Einsatz von eckigen Klammern dargestellt. Ein Attribut kann Parameter haben und kann auf verschiedene Codeelemente angewendet werden. Beispielsweise kann das `[Required]` Attribut dazu verwendet werden, anzugeben, dass eine Eigenschaft für das Model in einer Form erforderlich ist.
 
 Hier ein kleines Beispiel:
 *INSERT PICTURE*
