@@ -1,6 +1,4 @@
-[![janpetry.de](https://repository-images.githubusercontent.com/498703201/39a4dfce-bed2-48d9-9777-a076fb0f000f)](https://janpetry.de/)
-
-# janpetry.de
+# JanPetry.de
 
 This is my personal website, built using Nuxt 3 and powered by [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit) as well as [Docus](https://docus.dev/).
 
