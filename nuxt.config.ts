@@ -95,7 +95,6 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/', '/feed.xml', '/feed.json', '/feed.atom'],
-    },
-    preset: 'service-worker',
+    }
   },
 })
