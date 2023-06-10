@@ -50,10 +50,10 @@ const icon = computed(() => {
 </script>
 
 <template>
-    <div :title="title" class="flex items-center">
-      <Icon :name="icon" :class="small ? '!h-4 !w-4' : '!h-6 !w-6'" />
-      <div v-if="!small" class="ml-1.5 text-sm">
-        {{ title }}
-      </div>
+  <div :title="title" class="flex items-center">
+    <Icon :name="icon" :class="small ? '!h-4 !w-4' : '!h-6 !w-6'" />
+    <div v-if="!small" class="ml-1.5 text-sm">
+      {{ title }}
     </div>
+  </div>
 </template>
