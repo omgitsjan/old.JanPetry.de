@@ -5,17 +5,15 @@ icon: line-md:heart
 navigation: true
 prose: true
 ---
+### Get in touch 
+
+Heard from me? Awesome! <br />
+Then why not get in touch with me by writing me an [Email](mailto:mail@janpetry.de), or joining my [Discord](https://discord.com/invite/janslounge).
 
 ## My Partners
 
-Through my amazing partners, I'm able to dedicate a lot of my time to working on Projects i love.
+Through my amazing partners, I'm able to dedicate a lot of my time to working on Projects I love.
 
 Thank you to all of them!
 
-List comming soon...
-
-## Get in touch
-
-Heard from me? Heck yeah!
-
-Why not get in touch with me by following my [Twitter](https://twitter.com/omg_itsjan), or joining my [Discord](https://discord.com/invite/janslounge).
+<GeneralList />

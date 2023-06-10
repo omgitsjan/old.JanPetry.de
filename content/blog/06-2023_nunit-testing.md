@@ -8,21 +8,10 @@ aside: false
 excerpt: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 tags:
     - newsletter
-    - tests
+    - testing
     - dotnet
 ---
-
-Inhalt
-1. [.NET Testing Frameworks: NUnit und mehr](#.net-testing-frameworks:-nunit-und-mehr) 
-2. [Was sind also jetzt genau Attribute?](#was-sind-also-jetzt-genau-attribute?) 
-3. [Der Einsatz von Attributen im Testing](#der-einsatz-von-attributen-im-testing)
-4. [Wie sieht so ein Test aus?](#wie-sieht-so-ein-test-aus?) 
-5. [Test im echten Code als Beispiel](#test-im-echten-code-als-beispiel) 
-6. [Der Wert des Testings](#der-wert-des-testings) 
-7. [Testen in Theorie vs. Praxis](#testen-in-theorie-vs.-praxis) 
-8. [Schlussfolgerung](#schlussfolgerung)
   
-
 Mit diesem Beitrag will ich euch das Thema .NET Testing etwas näher bringen. Da die Softwareentwicklung ein fortlaufender Prozess der Verbesserung und Optimierung ist, spielt das Testing dabei eine entscheidende Rolle. Das Testen hilft uns, unser Vertrauen in den Code zu stärken, den wir schreiben, und natürlich Probleme frühzeitig zu identifizieren. Wir werden uns in diesem Beitrag auf das NUnit-Framework konzentrieren, allerdings existieren zahlreiche weitere Testing-Frameworks in .NET, welche vergleichbare Ansätze verfolgen.
 
 ## .NET Testing Frameworks: NUnit und mehr
