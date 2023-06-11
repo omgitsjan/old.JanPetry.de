@@ -55,7 +55,7 @@ const initialStyles = {
     </div>
     <div class="items-center justify-center" style="width: 350px">
       <img
-        src="/jan-petry.jpeg"
+        src="/jan-petry.webp"
         width="350"
         height="350"
         class="rounded-xl mb-10"

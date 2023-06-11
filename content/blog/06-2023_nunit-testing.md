@@ -3,7 +3,7 @@ title: '[DE] Einführung in das .NET Testing: Ein kleiner Überblick'
 description: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 publishedAt: '2023-06-01'
 publishOn: '2023-06-14'
-status: sponsor-only
+status: public
 aside: false
 excerpt: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
 tags:

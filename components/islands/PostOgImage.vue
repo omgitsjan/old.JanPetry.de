@@ -50,7 +50,7 @@ const initialStyles = {
       :style="{ width: '1000px', left: '100px' }"
     >
       <img
-        src="/jan-petry.jpeg"
+        src="/jan-petry.webp"
         width="60"
         height="60"
         class="rounded-xl mr-5"

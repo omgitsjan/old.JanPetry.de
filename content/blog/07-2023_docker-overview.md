@@ -3,7 +3,7 @@ title: '[DE] Docker: Ein Einblick in die Container Revolution'
 description: 'Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.'
 publishedAt: '2023-07-01'
 publishOn: '2023-07-14'
-status: sponsor-only
+status: sponsors-only
 aside: false
 excerpt: 'Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.'
 tags:

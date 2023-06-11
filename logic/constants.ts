@@ -1,7 +1,7 @@
 export const SiteName = 'Jan Petry'
 export const SiteUrl = 'https://janpetry.de'
 export const SiteImage = '/cover.png'
-export const SiteLogo = '/jan-petry.jpeg'
+export const SiteLogo = '/jan-petry.webp'
 export const SiteLanguage = 'en-US'
 export const SiteTagLine = 'Developer'
 // eslint-disable-next-line operator-linebreak
