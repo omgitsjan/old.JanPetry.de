@@ -5,16 +5,18 @@ export default {
 </script>
 
 <script lang="ts" setup>
-const props = withDefaults(defineProps<{
-  alt: string
-  src: string
-  lazy?: boolean | 'false' | 'true'
-  width?: number
-  noMargin?: boolean
-  figureClass?: string
-}>(), {
-  lazy: true,
-})
+const props = withDefaults(
+  defineProps<{
+    alt: string
+    src: string
+    lazy?: boolean | 'false' | 'true'
+    width?: number
+    noMargin?: boolean
+  }>(),
+  {
+    lazy: true,
+  }
+)
 
 const shiftLargeImgStyles = computed(() => {
   if (!props.width) return {}
@@ -38,16 +40,21 @@ const provider = props.src.startsWith('https://') ? '' : 'cloudinary'
 
 const $img = useImage()
 
-const src = $img(props.src, {
-  height: 700,
-  format: 'auto',
-}, {
-  provider,
-})
+const src = $img(
+  props.src,
+  {},
+  {
+    provider,
+  }
+)
 </script>
 
 <template>
-  <figure :style="shiftLargeImgStyles" :class="[noMargin ? '!my-0' : ' lg:(!my-10)', figureClass]" @click.prevent="handleClick">
+  <figure
+    :style="shiftLargeImgStyles"
+    :class="[noMargin ? '!my-0' : ' lg:(!my-10)']"
+    @click.prevent="handleClick"
+  >
     <nuxt-img
       v-bind="$attrs"
       :alt="alt"
