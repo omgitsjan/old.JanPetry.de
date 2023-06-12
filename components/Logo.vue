@@ -7,19 +7,30 @@ const initials = siteMeta.name
 </script>
 
 <template>
-  <nuxt-link to="/" class="flex items-center group unstyled py-4" title="Go Home">
+  <nuxt-link
+    to="/"
+    class="flex items-center group unstyled py-4"
+    title="Go Home"
+  >
     <NuxtImg
       :src="siteMeta.logo"
       width="80"
       height="80"
       :alt="siteMeta.name"
       provider="cloudinary"
-      style="width: 40px; height: 40px;"
+      style="width: 40px; height: 40px"
       class="rounded-lg h-10 w-10 mr-3 group-hover:(h-11 w-11) transition-all"
     />
-    <div aria-label="Harlan Wilton Initials" class="hidden sm:block text-gray-700 dark:text-gray-200 relative transform top-2 group-hover:top-0">
-      <span class="block text-green-700 font-bold text-3xl logo">{{ initials }}</span>
-      <span class="block text-green-700 font-bold text-3xl logo">{{ initials }}</span>
+    <div
+      aria-label="Jan Petry Initials"
+      class="hidden sm:block text-gray-700 dark:text-gray-200 relative transform top-2 group-hover:top-0"
+    >
+      <span class="block text-green-700 font-bold text-3xl logo">
+        {{ initials }}
+      </span>
+      <span class="block text-green-700 font-bold text-3xl logo">
+        {{ initials }}
+      </span>
     </div>
   </nuxt-link>
 </template>
@@ -41,7 +52,7 @@ const initials = siteMeta.name
 .logo {
   transform: skewX(-10deg);
   font-weight: 400;
-  transition: 0.2s;
+  transition: 0.25s;
   background: linear-gradient(90deg, rgba(#11998e, 0.3), rgba(#38ef7d, 0.3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

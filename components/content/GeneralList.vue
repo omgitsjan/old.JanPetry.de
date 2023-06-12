@@ -1,35 +1,20 @@
 <script lang="ts" setup>
 import { defineOgImageDynamic } from '#imports'
 
-const { data: categories } = await useProjects()
+const { data: categories } = await useGeneralList()
 
-// compute the total amount of stars from projects (but only my own projects)
-const totalStars = computed(() => {
+const totalEntrys = computed(() => {
   return (
     categories.value?.body
       // @ts-expect-error untyped
-      .map(c => c.projects)
-      .flat()
-      .map(p => p.stars || 0)
-      // @ts-expect-error untyped
-      .reduce((acc, stars) => acc + stars, 0)
-  )
-})
-
-const totalRepositorys = computed(() => {
-  return (
-    categories.value?.body
-      // @ts-expect-error untyped
-      .map(c => c.projects)
+      .map(c => c.entrys)
       .flat().length
   )
 })
 
 defineOgImageDynamic({
-  component: 'ProjectsOgImage',
-  totalRepositorys,
-  totalStars,
-  title: 'Projects',
+  component: 'PartnersOgImage',
+  title: 'Partners',
 })
 </script>
 
@@ -38,13 +23,13 @@ defineOgImageDynamic({
     <div
       class="font-bold inline-flex items-center opacity-90 bg-green-400 dark:bg-green-600 text-xl px-5 py-3 rounded text-white"
     >
-      <i-octicon:repo-16 class="inline text-yellow-400 mr-2" />
+      <i-line-md:heart class="inline text-yellow-400 mr-2" />
       <span>
-        {{ totalRepositorys }} GitHub Repositorys
+        {{ totalEntrys }} Partners
         <span class="opacity-70 text-xs">and counting</span>
       </span>
     </div>
-    <div v-for="(category, cKey) in categories.body" :key="cKey">
+    <div v-for="(category, cKey) in categories?.body" :key="cKey">
       <SubTitle>
         <IconNuxt
           v-if="category.name === 'Nuxt'"
@@ -58,10 +43,10 @@ defineOgImageDynamic({
         {{ category.name }}
       </SubTitle>
       <div class="grid md:grid-cols-2 gap-5 text-left">
-        <ProjectCard
-          v-for="(project, pKey) in category.projects"
+        <GeneralCard
+          v-for="(entry, pKey) in category.entrys"
           :key="pKey"
-          :project="project"
+          :entry="entry"
         />
       </div>
     </div>

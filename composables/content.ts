@@ -1,11 +1,23 @@
 import { useAsyncData } from '#app'
 import { queryContent } from '#imports'
-import type { JsonParsedContent, Page, Post, ProjectList } from '~/types'
+import type {
+  GeneralList,
+  JsonParsedContent,
+  Page,
+  Post,
+  ProjectList,
+} from '~/types'
 import { groupBy } from '~/logic'
 
 export function useProjects() {
   return useAsyncData('content:projects', () =>
-    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne(),
+    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne()
+  )
+}
+
+export function useGeneralList() {
+  return useAsyncData('content:entrys', () =>
+    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne()
   )
 }
 
@@ -14,25 +26,31 @@ export function useHeaderNav() {
 }
 
 export function usePostList() {
-  return useAsyncData('content:post-partials', () => queryContent<Post>()
-    .where({ _path: /blog\/*/ })
-    .without(['head', 'body', 'excerpt', '_'])
-    .sort({
-      publishedAt: -1,
-    })
-    .find(), {
-    // group posts by the publish year
-    transform: posts => groupBy(posts, p => new Date(p.publishedAt).getFullYear()),
-  })
+  return useAsyncData(
+    'content:post-partials',
+    () =>
+      queryContent<Post>()
+        .where({ _path: /blog\/*/ })
+        .without(['head', 'body', 'excerpt', '_'])
+        .sort({
+          publishedAt: -1,
+        })
+        .find(),
+    {
+      // group posts by the publish year
+      transform: posts =>
+        groupBy(posts, p => new Date(p.publishedAt).getFullYear()),
+    }
+  )
 }
 
 export function useRoutesContent<T extends Post>(path?: string) {
-  if (!path)
-    path = useRoute().path
-  return useAsyncData(`content:${path}`, () => queryContent<T>()
-    .where({ path: new RegExp(path) })
-    .without(['excerpt'])
-    .findOne(),
+  if (!path) path = useRoute().path
+  return useAsyncData(`content:${path}`, () =>
+    queryContent<T>()
+      .where({ path: new RegExp(path) })
+      .without(['excerpt'])
+      .findOne()
   )
 }
 

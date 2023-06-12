@@ -1,5 +1,5 @@
 {
-  "name": "harlanzw-com",
+  "name": "janpetry-de",
   "private": true,
   "packageManager": "pnpm@8.6.0",
   "scripts": {
@@ -26,9 +26,11 @@
     "@iconify-json/logos": "^1.1.31",
     "@iconify-json/mdi": "^1.1.52",
     "@iconify-json/noto": "^1.1.11",
+    "@iconify-json/octicon": "^1.1.40",
     "@iconify-json/ph": "^1.1.5",
     "@iconify-json/ri": "^1.1.9",
     "@iconify-json/simple-icons": "^1.1.55",
+    "@iconify-json/uim": "^1.1.5",
     "@iconify-json/vscode-icons": "^1.1.25",
     "@nuxt-themes/docus": "1.12.3",
     "@nuxt/content": "^2.6.0",

@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "semi": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "options": {
+        "parser": "vue"
+      }
+    }
+  ]
+}

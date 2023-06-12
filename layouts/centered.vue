@@ -14,11 +14,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-> div {
-  margin-bottom: 10%;
-}
-:deep(h1) svg {
-  display: none;
-}
+  > div {
+    margin-bottom: 10%;
+  }
+  :deep(h1) svg {
+    display: none;
+  }
 }
 </style>

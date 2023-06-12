@@ -3,10 +3,10 @@ body {
   overflow: overlay;
 }
 html.dark body.text-gray-800 {
-  background: rgb(17,24,39) !important;
+  background: rgb(17, 24, 39) !important;
 }
 html:not(.dark) body {
-  background-color: rgb(247,247,247) !important;
+  background-color: rgb(247, 247, 247) !important;
   background-image: linear-gradient(0deg, #33e47f10, #ffffff) !important;
 }
 
@@ -25,7 +25,6 @@ html:not(.dark) body {
   white-space: pre-wrap !important;
 }
 
-
 .link-favicon {
   z-index: 2;
   display: none;
@@ -41,18 +40,24 @@ html:not(.dark) body {
   }
 }
 
-a:not(.unstyled), .link {
+.green {
+  color: #11998e;
+}
+
+a:not(.unstyled),
+.link {
   position: relative;
   display: inline-block;
   transition: 0.2s;
 
-  &[target="_blank"]:hover + .link-favicon {
+  &[target='_blank']:hover + .link-favicon {
     display: inline-block;
     opacity: 1;
     animation: fadeInUp 0.2s ease-in-out;
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     position: absolute;
     height: 3px;
     bottom: -2px;
@@ -77,10 +82,12 @@ a:not(.unstyled), .link {
     border-bottom-right-radius: 3px;
   }
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     transform: translateY(-1px);
     animation: text-glow 1.5s alternate infinite ease-in-out;
-    &:after, &:before {
+    &:after,
+    &:before {
       opacity: 1;
       width: 50%;
     }
@@ -89,22 +96,22 @@ a:not(.unstyled), .link {
     font-weight: bold;
     background: linear-gradient(45deg, rgba(#11998e, 1), rgba(#23e75e, 1));
     -webkit-background-clip: text;
-    &:after, &:before {
+    &:after,
+    &:before {
       opacity: 0;
     }
   }
 }
 
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(.5rem)
+    transform: translateY(0.5rem);
   }
 
   to {
     opacity: 1;
-    transform: none
+    transform: none;
   }
 }
 
@@ -115,17 +122,16 @@ a:not(.unstyled), .link {
 
   to {
     opacity: 0;
-    transform: translateY(.5rem)
+    transform: translateY(0.5rem);
   }
 }
 
-
 .page-enter-active {
-  animation: fadeInUp .6s forwards
+  animation: fadeInUp 0.6s forwards;
 }
 
 .page-leave-active {
-  animation: fadeOutDown .6s backwards;
+  animation: fadeOutDown 0.6s backwards;
 }
 
 .icon {
@@ -139,3 +145,6 @@ a:not(.unstyled), .link {
   @apply hidden group-hover:inline-block;
 }
 
+.top--15{
+  top: -15px;
+}
