@@ -8,12 +8,6 @@ overrides:
   unstorage: ^1.6.0
   cheerio: 1.0.0-rc.10
 
-<<<<<<< HEAD
-devDependencies:
-  '@antfu/eslint-config':
-    specifier: ^0.39.4
-    version: 0.39.4(eslint@8.41.0)(typescript@5.0.4)
-=======
 dependencies:
   unstorage:
     specifier: ^1.7.0
@@ -23,7 +17,6 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^0.39.6
     version: 0.39.6(eslint@8.44.0)(typescript@5.1.6)
->>>>>>> 1fa9329 (chore: bump deps)
   '@iconify-json/bi':
     specifier: ^1.1.16
     version: 1.1.16
@@ -40,13 +33,8 @@ devDependencies:
     specifier: ^1.1.4
     version: 1.1.4
   '@iconify-json/fluent':
-<<<<<<< HEAD
-    specifier: ^1.1.22
-    version: 1.1.22
-=======
     specifier: ^1.1.25
     version: 1.1.25
->>>>>>> 1fa9329 (chore: bump deps)
   '@iconify-json/heroicons-outline':
     specifier: ^1.1.6
     version: 1.1.6
@@ -75,44 +63,23 @@ devDependencies:
     specifier: ^1.1.10
     version: 1.1.10
   '@iconify-json/simple-icons':
-<<<<<<< HEAD
-    specifier: ^1.1.55
-    version: 1.1.55
-  '@iconify-json/uim':
-    specifier: ^1.1.5
-    version: 1.1.5
-=======
     specifier: ^1.1.58
     version: 1.1.58
->>>>>>> 1fa9329 (chore: bump deps)
   '@iconify-json/vscode-icons':
     specifier: ^1.1.25
     version: 1.1.25
   '@nuxt-themes/docus':
-<<<<<<< HEAD
-    specifier: 1.12.0
-    version: 1.12.0(nuxt@3.5.2)(postcss@8.4.24)(rollup@3.24.0)(sass@1.62.1)(vue@3.3.4)
-=======
     specifier: ^1.13.0
     version: 1.13.0(nuxt@3.6.1)(postcss@8.4.24)(rollup@3.26.0)(sass@1.63.6)(vue@3.3.4)
->>>>>>> 1fa9329 (chore: bump deps)
   '@nuxt/content':
     specifier: ^2.7.0
     version: 2.7.0(rollup@3.26.0)
   '@nuxt/devtools':
-<<<<<<< HEAD
-    specifier: ^0.5.5
-    version: 0.5.5(nuxt@3.5.2)(rollup@3.24.0)(vite@4.3.9)
-  '@nuxt/image-edge':
-    specifier: 1.0.0-28092818.5c21f4c
-    version: 1.0.0-28092818.5c21f4c(rollup@3.24.0)
-=======
     specifier: ^0.6.6
     version: 0.6.6(nuxt@3.6.1)(rollup@3.26.0)(vite@4.3.9)
   '@nuxt/image-edge':
     specifier: 1.0.0-rc.1-28135297.08462d1
     version: 1.0.0-rc.1-28135297.08462d1(rollup@3.26.0)
->>>>>>> 1fa9329 (chore: bump deps)
   '@nuxtjs/color-mode':
     specifier: ^3.3.0
     version: 3.3.0(rollup@3.26.0)
@@ -121,11 +88,7 @@ devDependencies:
     version: 0.4.1(rollup@3.26.0)
   '@nuxtjs/eslint-config-typescript':
     specifier: ^12.0.0
-<<<<<<< HEAD
-    version: 12.0.0(eslint@8.41.0)(typescript@5.0.4)
-=======
     version: 12.0.0(eslint@8.44.0)(typescript@5.1.6)
->>>>>>> 1fa9329 (chore: bump deps)
   '@vue/repl':
     specifier: ^2.4.0
     version: 2.4.0
@@ -133,34 +96,22 @@ devDependencies:
     specifier: ^10.2.1
     version: 10.2.1(vue@3.3.4)
   '@vueuse/nuxt':
-<<<<<<< HEAD
-    specifier: ^10.1.2
-    version: 10.1.2(nuxt@3.5.2)(rollup@3.24.0)(vue@3.3.4)
-  eslint:
-    specifier: ^8.41.0
-    version: 8.41.0
-=======
     specifier: ^10.2.1
     version: 10.2.1(nuxt@3.6.1)(rollup@3.26.0)(vue@3.3.4)
   eslint:
     specifier: ^8.44.0
     version: 8.44.0
->>>>>>> 1fa9329 (chore: bump deps)
   feed:
     specifier: ^4.2.2
     version: 4.2.2
   nuxt:
-<<<<<<< HEAD
-    specifier: 3.5.2
-    version: 3.5.2(@types/node@20.2.5)(eslint@8.41.0)(rollup@3.24.0)(sass@1.62.1)(typescript@5.0.4)
-=======
     specifier: 3.6.1
     version: 3.6.1(@types/node@20.3.3)(eslint@8.44.0)(rollup@3.26.0)(sass@1.63.6)(typescript@5.1.6)
->>>>>>> 1fa9329 (chore: bump deps)
   nuxt-icon:
     specifier: ^0.4.2
     version: 0.4.2(rollup@3.26.0)(vue@3.3.4)
   nuxt-og-image:
+<<<<<<< HEAD
 <<<<<<< HEAD
     specifier: ^2.0.0-beta.42
     version: 2.0.0-beta.42(rollup@3.24.0)(vue@3.3.4)
@@ -168,6 +119,10 @@ devDependencies:
     specifier: ^2.0.0-beta.62
     version: 2.0.0-beta.62(rollup@3.26.0)(vue@3.3.4)
 >>>>>>> 1fa9329 (chore: bump deps)
+=======
+    specifier: ^2.0.0-beta.63
+    version: 2.0.0-beta.63(rollup@3.26.0)(vue@3.3.4)
+>>>>>>> 5089695 (chore: bump deps)
   nuxt-seo-kit:
     specifier: ^1.3.9
     version: 1.3.9(@unhead/vue@1.1.29)(rollup@3.26.0)(vue@3.3.4)
@@ -5723,7 +5678,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.3
+      resolve: 1.22.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -9737,12 +9692,17 @@ packages:
     dev: true
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /nuxt-og-image@2.0.0-beta.42(rollup@3.24.0)(vue@3.3.4):
     resolution: {integrity: sha512-PADhkm2chy0OQ4ImR0WKlazL/QhwN2mBldWekmdyNA0AEgzq6LIjdkfLMnZM0nKGKL1HJ5IKsll2bbynieSG9A==}
 =======
   /nuxt-og-image@2.0.0-beta.62(rollup@3.26.0)(vue@3.3.4):
     resolution: {integrity: sha512-hv3i+fULmldIchwUddtqIe3P7p1FL+0/QRrSgLLP7bh1C83eDzUCYDx0zrdG3Xa3LkNRVBlyJXUY9q/vuGFAtQ==}
 >>>>>>> 1fa9329 (chore: bump deps)
+=======
+  /nuxt-og-image@2.0.0-beta.63(rollup@3.26.0)(vue@3.3.4):
+    resolution: {integrity: sha512-J+tXrtXJrlhxX6QsNzWGG9KxrmTL3Fv9L1kdM6NVciw1MGpWa7bYnLjttFL1N21aD2o7mq/XdHyiCjEKd6w91g==}
+>>>>>>> 5089695 (chore: bump deps)
     dependencies:
       '@nuxt/kit': 3.6.1(rollup@3.26.0)
       '@resvg/resvg-js': 2.4.1
