@@ -1,119 +1,146 @@
 {
   "body": [
     {
-      "name": "VueUse",
-      "icon": "logos:vueuse",
+      "name": "Projects with .NET",
+      "icon": "logos:dotnet",
       "projects": [
         {
-          "name": "Head",
-          "repo": "vueuse/head",
+          "name": "JPPPortal.de",
+          "repo": "omgitsjan/JPPPortal",
+          "description": "Private C# .NET Project, more will be revealed soon...",
+          "icon": "ic:round-terminal"
+        },
+        {
+          "name": "DiscordBotAI",
+          "repo": "omgitsjan/DiscordBotAI",
+          "icon": "noto:robot"
+        }
+      ]
+    },
+    {
+      "name": "Websites with Typescript",
+      "icon": "logos:typescript-icon",
+      "projects": [
+        {
+          "name": "BioImpulse.de",
+          "repo": "omgitsjan/BioPulse",
+          "icon": "fluent-emoji-flat:purple-heart"
+        },
+        {
+          "name": "IanPRTZ.de",
+          "repo": "omgitsjan/IanPRTZ.de",
+          "icon": "ic:round-terminal"
+        },
+        {
+          "name": "JPProfessionals.de",
+          "repo": "JPProfessionals/jpp-homepage",
+          "description": "Private Nuxt3 Project, you can find the website under jpprofessionals.de.",
+          "link": "https://jpprofessionals.de/",
+          "icon": "game-icons:laser-burst"
+        },
+        {
+          "name": "JPP Backend",
+          "repo": "JPProfessionals/jpp-backend",
+          "description": "Private Nuxt3 Project, more will be revealed soon...",
           "icon": "lucide:triangle"
         },
         {
-          "name": "Schema.org",
-          "repo": "vueuse/schema-org",
+          "name": "JPP Frontend",
+          "repo": "JPProfessionals/jpp-frontend",
+          "description": "Private Nuxt3 Project, more will be revealed soon...",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "GTA Higher Lower",
+          "repo": "JPProfessionals/gtahigherlower",
+          "description": "Private Vue.JS Project, more will be revealed soon...",
           "icon": "lucide:triangle"
         }
       ]
     },
     {
-      "name": "Nuxt",
-      "icon": "logos:nuxt-icon",
+      "name": "Other Projects",
+      "icon": "logos:github-icon",
       "projects": [
         {
-          "name": "SEO Kit",
-          "repo": "harlan-zw/nuxt-seo-kit",
-          "icon": "noto:bento-box"
+          "name": "Magic Mirror",
+          "repo": "omgitsjan/MagicMirror",
+          "icon": "ic:round-terminal"
         },
         {
-          "name": "Link Checker",
-          "repo": "harlan-zw/nuxt-link-checker",
-          "icon": "noto:check-mark"
+          "name": "DiscordBot",
+          "repo": "maxsteinwand/DiscordBot",
+          "description": "Old Discord Bot Project. This project is no longer maintained.",
+          "icon": "ic:round-terminal"
         },
         {
-          "name": "Og Image",
-          "repo": "harlan-zw/nuxt-og-image",
-          "icon": "noto:framed-picture"
-        },
-        {
-          "name": "Simple Robots",
-          "repo": "harlan-zw/nuxt-simple-robots",
-          "icon": "noto:robot"
-        },
-        {
-          "name": "Simple Sitemap",
-          "repo": "harlan-zw/nuxt-simple-sitemap",
-          "icon": "noto:world-map"
-        },
-        {
-          "name": "SEO Experiments",
-          "repo": "harlan-zw/nuxt-seo-experiments",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "Schema.org",
-          "repo": "harlan-zw/unhead-schema-org",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "Webpack Optimisations",
-          "repo": "harlan-zw/nuxt-webpack-optimisations",
-          "icon": "logos:webpack"
-        },
-        {
-          "name": "Delay Hydration",
-          "repo": "harlan-zw/nuxt-delay-hydration",
-          "icon": "noto:stopwatch"
-        },
-        {
-          "name": "WindiCSS",
-          "repo": "windicss/nuxt-windicss",
-          "icon": "simple-icons:windicss"
+          "name": "MB Parkett",
+          "repo": "xXDaniel1109Xx/mb_parkett",
+          "description": "Old Website for one of our cusomter from Luxenbourg. This project was made in PHP and is no longer maintained.",
+          "link": "https://mbparkett.com/",
+          "icon": "ic:round-terminal"
         }
       ]
     },
     {
       "name": "Tools",
+      "icon": "material-symbols:tools-wrench",
       "projects": [
         {
-          "name": "Unlighthouse",
-          "repo": "harlan-zw/unlighthouse",
-          "icon": "logos:lighthouse"
+          "name": "Jellyfin Web",
+          "repo": "jellyfin/jellyfin-web",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "Directus",
+          "repo": "directus/directus",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "Cookie Consent for NuxtJS",
+          "repo": "raphaelbernhart/nuxtjs-cookieconsent",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "Home-Assistant.io",
+          "repo": "home-assistant/core",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "ArchiSteamFarm",
+          "repo": "JustArchiNET/ArchiSteamFarm",
+          "icon": "lucide:triangle"
+        },
+        {
+          "name": "Pi.Alert",
+          "repo": "jokob-sk/Pi.Alert",
+          "icon": "lucide:triangle"
         }
       ]
     },
     {
       "name": "Utilities",
+      "icon": "fluent:window-dev-tools-16-filled",
       "projects": [
         {
-          "name": "Unhead",
-          "repo": "unjs/unhead",
+          "name": "VSCode",
+          "repo": "microsoft/vscode",
           "icon": "lucide:triangle"
         },
         {
-          "name": "Unhead Schema.org",
-          "repo": "harlan-zw/unhead-schema-org",
+          "name": "Spotify Downloader",
+          "repo": "spotDL/spotify-downloader",
           "icon": "lucide:triangle"
         },
         {
-          "name": "zHead",
-          "repo": "harlan-zw/zhead",
-          "icon": "emojione-v1:gem-stone"
+          "name": "Website Downloader",
+          "repo": "omgitsjan/Website-downloader",
+          "icon": "lucide:triangle"
         },
         {
-          "name": "Unrouted",
-          "repo": "harlan-zw/unrouted",
+          "name": "Developer Roadmap",
+          "repo": "kamranahmedse/developer-roadmap",
           "icon": "ic:twotone-route"
-        },
-        {
-          "name": "Changelogd",
-          "repo": "harlan-zw/changelogd",
-          "icon": "noto:wood"
-        },
-        {
-          "name": "Chonky Pkg",
-          "repo": "harlan-zw/chonky-pkg",
-          "icon": "noto:seal"
         }
       ]
     }

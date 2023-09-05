@@ -37,10 +37,14 @@ const icon = computed(() => {
       return 'logos:typescript-icon'
     case 'webpack':
       return 'logos:webpack'
+    case 'dotnet':
+      return 'skill-icons:dotnet'
+    case 'docker':
+      return 'skill-icons:docker'
     case 'newsletter':
       return 'line-md:email-twotone'
     default:
-      return ''
+      return 'line-md:hash-small'
   }
 })
 </script>

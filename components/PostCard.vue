@@ -6,7 +6,11 @@ import { useElementHover, useTransition } from '#imports'
 
 const props = defineProps<{ post: Post }>()
 
-const formatPublishedDate = (options: any) => new Intl.DateTimeFormat('en', options).format(new Date(props.post.publishedAt))
+function formatPublishedDate(options: any) {
+  return new Intl.DateTimeFormat('en', options).format(
+    new Date(props.post.publishedAt)
+  )
+}
 
 const month = formatPublishedDate({ month: 'short' })
 const day = dayNth(formatPublishedDate({ day: 'numeric' }))
@@ -32,8 +36,7 @@ onMounted(() => {
     const $marquee: HTMLElement = marqueeEl.value
     const $child = $marquee.children[0] as HTMLElement
     const offset = $child.offsetWidth - marqueeEl.value.offsetWidth
-    if (offset === 0 || marqueeDuration.value === 1000)
-      return
+    if (offset === 0 || marqueeDuration.value === 1000) return
     // set the duration based on the width we need to traverse
     const initialDuration = offset * 20
     // wait a bit before starting to give the user a chance to realise what's happening
@@ -43,45 +46,55 @@ onMounted(() => {
     marqueeDelay.value = initialDelay
     marqueePosition.value = offset
 
-    watch(marqueTransition, (v) => {
+    watch(marqueTransition, v => {
       $child.style.transform = `translateX(-${v}px)`
       if (v === offset) {
         // wait before going back, go back quickly
         marqueeDelay.value = 2500
         marqueeDuration.value = 1000
         marqueePosition.value = 0
-      }
-      else if (cardHovered.value && v === 0) {
+      } else if (cardHovered.value && v === 0) {
         marqueeDuration.value = initialDuration
         marqueePosition.value = offset
         marqueeDelay.value = initialDelay
-      }
-      else {
+      } else {
         marqueeDuration.value = initialDuration
         marqueeDelay.value = initialDelay
       }
     })
   }
 
-  watch(cardHovered, (v) => {
-    if (v)
-      startMarquee()
+  watch(cardHovered, v => {
+    if (v) startMarquee()
   })
 })
 </script>
 
 <template>
   <div class="max-w-full relative group">
-    <NuxtLink ref="card" :to="post._path" class="block max-w-full transition-all ">
+    <NuxtLink
+      ref="card"
+      :to="post._path"
+      class="block max-w-full transition-all"
+    >
       <div class="flex items-center">
         <div class="max-w-full">
-          <h3 class="opacity-90 text-xl mb-3 group-hover:(sm:-mx-3 tracking-wide text-green-700 font-bold) transition-all">
+          <h3
+            class="opacity-90 text-xl mb-3 group-hover:(sm:-mx-3 tracking-wide text-green-700 font-bold) transition-all"
+          >
             <span>{{ post.title }}</span>
           </h3>
-          <div class="text-sm wrap overflow-hidden whitespace-nowrap mb-3 flex items-center">
-            <span v-if="post.readingMins" class="opacity-70">{{ post.readingMins }} min</span>
+          <div
+            class="text-sm wrap overflow-hidden whitespace-nowrap mb-3 flex items-center"
+          >
+            <span v-if="post.readingMins" class="opacity-70">
+              {{ post.readingMins }} min
+            </span>
             <span class="px-2 opacity-50 hidden sm:inline-block">·</span>
-            <div ref="marqueeEl" class="hidden sm:inline-flex overflow-hidden items-center">
+            <div
+              ref="marqueeEl"
+              class="hidden sm:inline-flex overflow-hidden items-center"
+            >
               <div class="opacity-60">
                 {{ post.description }}
               </div>

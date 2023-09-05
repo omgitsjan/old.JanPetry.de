@@ -21,7 +21,10 @@ const newsletters = Object.values(posts.value).flat()
     <div v-for="(post, key) in newsletters" :key="key">
       <NuxtLink :to="post._path">
         {{ post.title }}
-      </Nuxtlink>
+      </NuxtLink>
+    </div>
+    <div v-if="newsletters.length === 0">
+      <i>There is no post at the moment, please check back later...</i>
     </div>
   </div>
 </template>
