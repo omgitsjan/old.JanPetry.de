@@ -2,8 +2,7 @@ import { $fetch } from 'ofetch'
 import type { ParsedContent } from '~/types'
 
 export async function Projects(content: ParsedContent) {
-  if (content._file !== '_projects.json')
-    return content
+  if (content._file !== '_projects.json') return content
 
   for (const ecosystem of content.body) {
     for (const project of ecosystem.projects) {
@@ -12,8 +11,7 @@ export async function Projects(content: ParsedContent) {
         project.stars = repo.stars
         project.description = repo.description
         project.updatedAt = repo.updatedAt
-      }
-      catch (e) {}
+      } catch (e) {}
     }
   }
 

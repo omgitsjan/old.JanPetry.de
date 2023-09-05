@@ -5,17 +5,19 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtModule({
   setup() {
-    addVitePlugin(unpluginIcons.vite({
-      autoInstall: true,
-    }))
+    addVitePlugin(
+      unpluginIcons.vite({
+        autoInstall: true,
+      })
+    )
 
-    addVitePlugin(Components({
-      dts: '.nuxt/icons.d.ts',
-      // no nuxt components
-      dirs: [],
-      resolvers: [
-        IconsResolver(),
-      ],
-    }))
+    addVitePlugin(
+      Components({
+        dts: '.nuxt/icons.d.ts',
+        // no nuxt components
+        dirs: [],
+        resolvers: [IconsResolver()],
+      })
+    )
   },
 })

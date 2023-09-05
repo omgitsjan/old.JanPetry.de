@@ -3,7 +3,7 @@ const { page: post } = useContent()
 defineOgImage({
   component: 'Newsletter',
   readingMins: post.value.readingMins,
-  ...post.value.ogImage || {},
+  ...(post.value.ogImage || {}),
 })
 </script>
 
@@ -17,7 +17,10 @@ defineOgImage({
     <PostMeta :post="post" />
     <article>
       <div class="prose-wrap max-w-85ch">
-        <NewsletterAlert v-if="post.tags.includes('newsletter')" class="md:mt-10 mt-3" />
+        <NewsletterAlert
+          v-if="post.tags.includes('newsletter')"
+          class="md:mt-10 mt-3"
+        />
         <Prose>
           <ContentRenderer :value="post" />
         </Prose>
@@ -27,7 +30,7 @@ defineOgImage({
 </template>
 
 <style>
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .toc {
     position: initial !important;
   }

@@ -40,7 +40,7 @@ export function Links(content: ParsedContent) {
         //   })
         // }
       }
-    },
+    }
   )
   return content
 }

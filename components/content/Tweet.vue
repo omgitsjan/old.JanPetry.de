@@ -12,16 +12,14 @@ defineProps<{ id: string }>()
     <div class="flex justify-between">
       <LegoTweetUser v-slot="{ user }">
         <div class="flex items-center">
-          <LegoTweetUserAvatar style="margin: 0 !important;">
+          <LegoTweetUserAvatar style="margin: 0 !important">
             <span />
           </LegoTweetUserAvatar>
           <div class="ml-3">
             <div class="font-semibold leading-5">
               {{ user.name }}
             </div>
-            <div class="text-gray-400">
-              @{{ user.screen_name }}
-            </div>
+            <div class="text-gray-400">@{{ user.screen_name }}</div>
           </div>
         </div>
       </LegoTweetUser>
@@ -92,7 +90,7 @@ defineProps<{ id: string }>()
         />
 
         <span class="group-hover:text-green-400 group-hover:underline">
-          {{ copied ? "Copied!" : "Copy link" }}
+          {{ copied ? 'Copied!' : 'Copy link' }}
         </span>
       </LegoTweetActionCopy>
     </LegoTweetAction>

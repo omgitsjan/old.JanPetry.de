@@ -21,18 +21,14 @@ const mdPlugins = [
   Links,
 ]
 
-const miscPlugins = [
-  Projects,
-]
+const miscPlugins = [Projects]
 
-export const ContentPostProcess: NitroAppPlugin = (nitroApp) => {
-  nitroApp.hooks.hook('content:file:afterParse', async (content) => {
+export const ContentPostProcess: NitroAppPlugin = nitroApp => {
+  nitroApp.hooks.hook('content:file:afterParse', async content => {
     if (content._extension === 'md') {
-      for (const plugin of mdPlugins)
-        content = await plugin(content)
+      for (const plugin of mdPlugins) content = await plugin(content)
     }
-    for (const plugin of miscPlugins)
-      content = await plugin(content)
+    for (const plugin of miscPlugins) content = await plugin(content)
   })
 }
 

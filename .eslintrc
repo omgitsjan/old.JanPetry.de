@@ -1,6 +1,3 @@
 {
-  "extends": [
-    "@nuxtjs/eslint-config-typescript",
-    "@antfu"
-  ]
+  "extends": ["@nuxtjs/eslint-config-typescript", "@antfu"]
 }

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 
   site: {
     name: 'Jan Petry',
-    logo: '/jan-petry.jpeg',
+    logo: '/jan-petry.webp',
     titleSeparator: '·',
     url: 'https://janpetry.de/',
     description:

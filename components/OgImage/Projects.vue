@@ -82,7 +82,8 @@ const backgroundFlareAttrs = computed(() => {
       top: '0%',
       width: '200%',
       height: '200%',
-      backgroundImage: 'radial-gradient(circle, rgba(0,220,130, 0.2) 0%,  rgba(5, 5, 5, 0.5) 50%, rgba(5, 5, 5,0) 70%)',
+      backgroundImage:
+        'radial-gradient(circle, rgba(0,220,130, 0.2) 0%,  rgba(5, 5, 5, 0.5) 50%, rgba(5, 5, 5,0) 70%)',
     },
   }
 })
@@ -97,7 +98,8 @@ const backgroundFlareTwoAttrs = computed(() => {
       left: '-5%',
       width: '150%',
       height: '150%',
-      backgroundImage: 'radial-gradient(circle, rgba(0,123,220, 1) 0%,  rgba(5, 5, 5, 0.3) 50%, rgba(5, 5, 5,0) 70%)',
+      backgroundImage:
+        'radial-gradient(circle, rgba(0,123,220, 1) 0%,  rgba(5, 5, 5, 0.3) 50%, rgba(5, 5, 5,0) 70%)',
     },
   }
 })
@@ -126,7 +128,11 @@ const siteName = computed(() => {
   return props.siteName || siteConfig.name
 })
 const siteLogo = computed(() => {
-  return props.siteLogo || siteConfig.logo || 'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
+  return (
+    props.siteLogo ||
+    siteConfig.logo ||
+    'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
+  )
 })
 </script>
 
@@ -135,7 +141,7 @@ const siteLogo = computed(() => {
   <div v-bind="backgroundFlareAttrs" />
   <div v-bind="backgroundFlareTwoAttrs" />
   <div class="w-full flex flex-row z-10">
-    <div class="w-1/2" style="padding: 50px;">
+    <div class="w-1/2" style="padding: 50px">
       <div class="flex flex-col h-full justify-between text-gray-100">
         <div class="flex flex-row justify-between items-center">
           <div class="flex flex-col">
@@ -148,18 +154,24 @@ const siteLogo = computed(() => {
           </div>
         </div>
         <div class="text-white w-full flex flex-row">
-          <img v-if="siteLogo" :src="siteLogo" height="50" class="rounded mr-5">
-          <div style="font-size: 30px;" class="font-bold mt-2">
+          <img
+            v-if="siteLogo"
+            :src="siteLogo"
+            height="50"
+            class="rounded mr-5"
+          />
+          <div style="font-size: 30px" class="font-bold mt-2">
             {{ siteName }}
           </div>
         </div>
       </div>
     </div>
     <div class="w-1/2 items-center justify-center text-white">
-      <div :style="{ fontSize: '80px' }" class="flex flex-col justify-center items-center">
-        <div class="mb-10">
-          ⭐
-        </div>
+      <div
+        :style="{ fontSize: '80px' }"
+        class="flex flex-col justify-center items-center"
+      >
+        <div class="mb-10">⭐</div>
         <div>{{ totalStars }} Stars</div>
       </div>
     </div>

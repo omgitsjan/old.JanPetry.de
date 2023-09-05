@@ -24,7 +24,7 @@ const newsletters = Object.values(posts.value).flat()
       </NuxtLink>
     </div>
     <div v-if="newsletters.length === 0">
-      <i>There is no post at the moment, please check back later...</i>
+      <i>There are no posts at the moment, please check back later...</i>
     </div>
   </div>
 </template>

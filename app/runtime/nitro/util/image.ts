@@ -2,7 +2,11 @@ export const MaxWidth = 900
 export const MaxHeight = 700
 export const defaultAspectRatio = 16 / 9
 
-export function computeSizes(width: number, height: number, maxHeight?: number) {
+export function computeSizes(
+  width: number,
+  height: number,
+  maxHeight?: number
+) {
   maxHeight = maxHeight || (height > MaxHeight ? MaxHeight : height)
   // figure out aspect ratio
   const ar = width / height
@@ -20,11 +24,7 @@ export function computeSizes(width: number, height: number, maxHeight?: number) 
 
   const px = (size: number) => `${size}px`
 
-  const sizes = [
-    `md:${px(width)}`,
-    'sm:95vw',
-    'xs:95vw',
-  ].join(' ')
+  const sizes = [`md:${px(width)}`, 'sm:95vw', 'xs:95vw'].join(' ')
 
   return {
     height,

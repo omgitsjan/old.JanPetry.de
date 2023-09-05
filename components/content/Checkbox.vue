@@ -7,9 +7,16 @@ function changed() {
 
 <template>
   <div class="py-3" :class="value ? ['opacity-50'] : []">
-    <label class="mb-1 flex items-center py-3 px-2 hover:bg-blue-50 dark:hover:bg-blue-900 rounded cursor-pointer">
+    <label
+      class="mb-1 flex items-center py-3 px-2 hover:bg-blue-50 dark:hover:bg-blue-900 rounded cursor-pointer"
+    >
       <div class="relative">
-        <input :checked="value ? 'checked' : false" type="checkbox" class="hidden" @input="changed">
+        <input
+          :checked="value ? 'checked' : false"
+          type="checkbox"
+          class="hidden"
+          @input="changed"
+        />
         <icon name="line-md:confirm-circle-twotone-to-circle-transition" />
         <icon v-if="value" name="line-md:confirm" class="absolute check" />
       </div>
@@ -17,7 +24,10 @@ function changed() {
         <Markdown :use="$slots.default" unwrap="p" />
       </div>
     </label>
-    <div class="ml-12 opacity-85 max-h-full overflow-hidden transition-all" :class="value ? ['max-h-5'] : []">
+    <div
+      class="ml-12 opacity-85 max-h-full overflow-hidden transition-all"
+      :class="value ? ['max-h-5'] : []"
+    >
       <Markdown :use="$slots.tip" />
     </div>
   </div>

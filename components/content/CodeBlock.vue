@@ -1,5 +1,7 @@
 <template>
-  <div class="code-block transform relative my-5 !py-0  max-h-700px overflow-y-auto">
+  <div
+    class="code-block transform relative my-5 !py-0 max-h-700px overflow-y-auto"
+  >
     <slot />
   </div>
 </template>
@@ -35,7 +37,7 @@
   }
 }
 :deep(.line:hover) {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 
   &:before {
     opacity: 0.3;

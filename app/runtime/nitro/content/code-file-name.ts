@@ -5,7 +5,8 @@ import type { ParsedContent } from '~/types'
 export function CodeFilename(content: ParsedContent) {
   visit(
     content.body,
-    (node: MarkdownNode) => node?.tag === 'code' && (node?.props?.filename || node?.props?.language),
+    (node: MarkdownNode) =>
+      node?.tag === 'code' && (node?.props?.filename || node?.props?.language),
     (node: MarkdownNode, index, parent: MarkdownNode) => {
       const children: MarkdownNode[] = []
       if (node.props.filename) {
@@ -15,27 +16,29 @@ export function CodeFilename(content: ParsedContent) {
           props: {
             class: 'code-block__filename',
           },
-          children: [
-            { type: 'text', value: node?.props?.filename },
-          ],
+          children: [{ type: 'text', value: node?.props?.filename }],
         })
       }
       children.push(node)
-      parent.children.splice(index, 1, ...[
-        {
-          type: 'element',
-          tag: 'CodeBlock',
-          props: {
-            'data-language': node.props.language,
-            'class': [
-              'code-block',
-              node.props.filename ? 'code-block--with-filename' : '',
-            ].join(' '),
+      parent.children.splice(
+        index,
+        1,
+        ...[
+          {
+            type: 'element',
+            tag: 'CodeBlock',
+            props: {
+              'data-language': node.props.language,
+              class: [
+                'code-block',
+                node.props.filename ? 'code-block--with-filename' : '',
+              ].join(' '),
+            },
+            children,
           },
-          children,
-        },
-      ])
-    },
+        ]
+      )
+    }
   )
   return content
 }

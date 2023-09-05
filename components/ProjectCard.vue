@@ -34,7 +34,8 @@ const repo = `https://github.com/${props.project?.repo}`
       {{ project?.description || 'placeholder' }}
     </p>
     <div class="text-xs inline-flex items-center absolute top-4 right-4">
-      <i-carbon-star class="inline mr-1 mb-2px" /> {{ project?.stars || 0 }}
+      <i-carbon-star class="inline mr-1 mb-2px" />
+      {{ project?.stars || 0 }}
     </div>
   </a>
 </template>
