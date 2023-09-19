@@ -1,10 +1,22 @@
 import { fetchContentNavigation, queryContent, useAsyncData } from '#imports'
-import type { JsonParsedContent, Page, Post, ProjectList } from '~/types'
+import type {
+  GeneralList,
+  JsonParsedContent,
+  Page,
+  Post,
+  ProjectList,
+} from '~/types'
 import { groupBy } from '~/logic'
 
 export function useProjects() {
   return useAsyncData('content:projects', () =>
     queryContent<JsonParsedContent<ProjectList>>('_projects').findOne()
+  )
+}
+
+export function useGeneralList() {
+  return useAsyncData('content:entrys', () =>
+    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne()
   )
 }
 
