@@ -8,7 +8,7 @@ export default defineNuxtModule({
     addVitePlugin(
       unpluginIcons.vite({
         autoInstall: true,
-      })
+      }),
     )
 
     addVitePlugin(
@@ -17,7 +17,7 @@ export default defineNuxtModule({
         // no nuxt components
         dirs: [],
         resolvers: [IconsResolver()],
-      })
+      }),
     )
   },
 })

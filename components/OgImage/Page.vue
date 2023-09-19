@@ -44,8 +44,8 @@ const backgroundFlareTwoAttrs = {
 const siteConfig = useSiteConfig()
 const siteLogo = computed(() => {
   return (
-    siteConfig.logo ||
-    'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
+    siteConfig.logo
+    || 'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
   )
 })
 </script>
@@ -55,6 +55,6 @@ const siteLogo = computed(() => {
   <div v-bind="backgroundFlareAttrs" />
   <div v-bind="backgroundFlareTwoAttrs" />
   <div class="w-full flex items-center justify-center h-full flex-row z-10">
-    <img v-if="siteLogo" :src="siteLogo" height="200" class="rounded mr-5" />
+    <img v-if="siteLogo" :src="siteLogo" height="200" class="rounded mr-5">
   </div>
 </template>

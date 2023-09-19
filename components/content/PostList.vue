@@ -30,7 +30,7 @@ const yearKeys = Object.keys(posts.value).reverse()
           <div class="space-y-5" style="max-width: 100ch">
             <PostCard
               v-for="(post, key) in posts[year].filter(
-                p => p.status !== 'unlisted'
+                p => p.status !== 'unlisted',
               )"
               :key="key"
               :post="post"

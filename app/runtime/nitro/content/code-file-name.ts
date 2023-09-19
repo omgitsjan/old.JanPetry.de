@@ -29,16 +29,16 @@ export function CodeFilename(content: ParsedContent) {
             tag: 'CodeBlock',
             props: {
               'data-language': node.props.language,
-              class: [
+              'class': [
                 'code-block',
                 node.props.filename ? 'code-block--with-filename' : '',
               ].join(' '),
             },
             children,
           },
-        ]
+        ],
       )
-    }
+    },
   )
   return content
 }

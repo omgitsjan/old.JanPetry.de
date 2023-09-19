@@ -41,11 +41,11 @@ export function usePosts(options?: UsePostsOptions) {
         .find(),
     {
       // group posts by the publish year
-      transform: posts => {
+      transform: (posts) => {
         posts = posts.filter(p => p.publishedAt)
         return groupBy(posts, p => new Date(p.publishedAt).getFullYear())
       },
-    }
+    },
   )
 }
 
@@ -76,10 +76,10 @@ export function useNewsletterPosts(options?: UsePostsOptions) {
         .find(),
     {
       // group posts by the publish year
-      transform: posts => {
+      transform: (posts) => {
         posts = posts.filter(p => p.publishedAt)
         return groupBy(posts, p => new Date(p.publishedAt).getFullYear())
       },
-    }
+    },
   )
 }

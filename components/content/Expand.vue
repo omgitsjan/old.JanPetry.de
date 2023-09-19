@@ -11,7 +11,7 @@ const props = withDefaults(
   }>(),
   {
     width: 1000,
-  }
+  },
 )
 
 const { width } = useWindowSize()
@@ -19,9 +19,10 @@ const { width } = useWindowSize()
 const shiftLargeImgStyles = computed(() => {
   const transformX = `-${Math.round((props.width - 812) / 2)}px`
   // if screen width exceeds 1500px we can translate, otherwise we go full width
-  if (width.value < 1500) return {}
+  if (width.value < 1500)
+    return {}
   return {
-    width: `${props.width}px`,
+    'width': `${props.width}px`,
     '--tw-translate-x': transformX,
   }
 })

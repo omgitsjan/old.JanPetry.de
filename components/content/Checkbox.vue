@@ -16,7 +16,7 @@ function changed() {
           type="checkbox"
           class="hidden"
           @input="changed"
-        />
+        >
         <icon name="line-md:confirm-circle-twotone-to-circle-transition" />
         <icon v-if="value" name="line-md:confirm" class="absolute check" />
       </div>

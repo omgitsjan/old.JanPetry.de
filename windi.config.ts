@@ -1,9 +1,10 @@
 import { defineConfig } from 'windicss/helpers'
 import typography from 'windicss/plugin/typography'
+import forms from 'windicss/plugin/forms'
 
 export default defineConfig({
   plugins: [
-    require('windicss/plugin/forms'),
+    forms,
     typography({
       // Turns text color to light, when dark mode enabled. Default = false
       dark: true,

@@ -84,7 +84,7 @@ export default defineNuxtConfig({
   },
 
   studio: {
-    enabled: false,
+    enabled: true,
   },
 
   nitro: {

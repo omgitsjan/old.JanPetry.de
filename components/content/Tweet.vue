@@ -4,8 +4,8 @@ defineProps<{ id: string }>()
 
 <template>
   <LegoTweet
-    v-slot="{ url }"
     v-if="id"
+    v-slot="{ url }"
     :tweet-id="id"
     class="tweet max-w-[550px] mx-auto my-15 dark:bg-black bg-white p-4 rounded-xl border not-prose dark:border-gray-700"
   >
@@ -19,7 +19,9 @@ defineProps<{ id: string }>()
             <div class="font-semibold leading-5">
               {{ user.name }}
             </div>
-            <div class="text-gray-400">@{{ user.screen_name }}</div>
+            <div class="text-gray-400">
+              @{{ user.screen_name }}
+            </div>
           </div>
         </div>
       </LegoTweetUser>

@@ -12,18 +12,19 @@ export function NuxtImage(content: ParsedContent) {
     (node: MarkdownNode, index, parent: MarkdownNode) => {
       parent.children.splice(index, 1, ...node.children)
       return index
-    }
+    },
   )
 
   visit(
     content.body,
     (node: any) => node?.tag === 'img',
-    node => {
+    (node) => {
       // image is a simple wrapper around NuxtImg
       node.tag = 'Image'
       const intKeys = ['height', 'width', 'max-height']
-      intKeys.forEach(k => {
-        if (node.props[k]) node.props[k] = Number.parseInt(node.props[k])
+      intKeys.forEach((k) => {
+        if (node.props[k])
+          node.props[k] = Number.parseInt(node.props[k])
       })
       if (node.props.height && node.props.width) {
         node.props = {
@@ -31,11 +32,11 @@ export function NuxtImage(content: ParsedContent) {
           ...computeSizes(
             node.props.width,
             node.props.height,
-            node.props['max-height']
+            node.props['max-height'],
           ),
         }
       }
-    }
+    },
   )
   return content
 }

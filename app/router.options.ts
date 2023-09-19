@@ -8,7 +8,7 @@ const RouteOptions: RouterConfig = {
     // If history back
     if (savedPosition) {
       // Handle Suspense resolution
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         nuxtApp.hooks.hookOnce('page:finish', () => {
           setTimeout(() => resolve(savedPosition), 50)
         })
@@ -18,11 +18,12 @@ const RouteOptions: RouterConfig = {
     if (to.hash) {
       setTimeout(() => {
         let heading = document.querySelector(
-          `[id="${to.hash.replace('#', '')}"]`
+          `[id="${to.hash.replace('#', '')}"]`,
         ) as any
         if (!heading)
           heading = document.querySelector(`[href$="${to.hash}"]`) as any
-        if (!heading) return
+        if (!heading)
+          return
         return window.scrollTo({
           top: heading.offsetTop,
           behavior: 'smooth',

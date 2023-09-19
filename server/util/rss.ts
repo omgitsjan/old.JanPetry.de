@@ -31,7 +31,8 @@ export async function generateBlogFeed(event) {
   const posts = await serverQueryContent(event, 'blog').find()
 
   for (const post of posts) {
-    if (post._path === '/blog' || post._path === '/blog/_dir') continue
+    if (post._path === '/blog' || post._path === '/blog/_dir')
+      continue
     // this will return the SSR content of the post
     const content = await $fetch<string>(post._path!)
     let $ = cheerio.load(content)

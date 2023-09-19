@@ -7,7 +7,8 @@ export function groupBy<T extends {}>(values: T[], fn: (v: T) => any) {
 
 export function dayNth(input: string) {
   const d = Number.parseInt(input)
-  if (d > 3 && d < 21) return `${d}th`
+  if (d > 3 && d < 21)
+    return `${d}th`
   switch (d % 10) {
     case 1:
       return `${d}st`

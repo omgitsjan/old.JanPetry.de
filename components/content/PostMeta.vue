@@ -7,8 +7,9 @@ const { post } = defineProps<{
   post: Post
 }>()
 
-const formatPublishedDate = (options: any) =>
-  new Intl.DateTimeFormat('en', options).format(new Date(post.publishedAt))
+function formatPublishedDate(options: any) {
+  return new Intl.DateTimeFormat('en', options).format(new Date(post.publishedAt))
+}
 const year = formatPublishedDate({ year: 'numeric' })
 const month = formatPublishedDate({ month: 'short' })
 const day = dayNth(formatPublishedDate({ day: 'numeric' }))
@@ -26,7 +27,9 @@ useSeoMeta({
     class="post-meta sm:(flex space-x-7 text-lg space-y-0) opacity-80 space-y-3 items-center"
   >
     <div>Published {{ month }} {{ day }} {{ year }}</div>
-    <div class="opacity-50 text-xs hidden sm:block">●</div>
+    <div class="opacity-50 text-xs hidden sm:block">
+      ●
+    </div>
     <div>{{ post.readingMins }} minute read</div>
   </div>
 </template>

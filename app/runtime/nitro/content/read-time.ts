@@ -46,9 +46,9 @@ export function ReadTime(content: ParsedContent) {
         // check the node itself and children for text nodes
         ...[...node.children, node]
           .filter(n => n.type === 'text')
-          .map(n => n.value.trim())
+          .map(n => n.value.trim()),
       )
-    }
+    },
   )
   content.readingMins = calculateReadingMins(textNodes.join(' '))
   return content

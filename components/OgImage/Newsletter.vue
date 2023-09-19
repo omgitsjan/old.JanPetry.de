@@ -110,9 +110,9 @@ const siteName = computed(() => {
 })
 const siteLogo = computed(() => {
   return (
-    props.siteLogo ||
-    siteConfig.logo ||
-    'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
+    props.siteLogo
+    || siteConfig.logo
+    || 'https://nuxt.com/assets/design-kit/logo/full-logo-green-light.png'
   )
 })
 </script>
@@ -167,7 +167,7 @@ const siteLogo = computed(() => {
             :src="siteLogo"
             height="50"
             class="rounded mr-5"
-          />
+          >
           <div style="font-size: 30px" class="font-bold mt-2">
             {{ siteName }}
           </div>
@@ -182,7 +182,7 @@ const siteLogo = computed(() => {
         width="630"
         style="object-fit: cover"
         class="rounded-xl max-w-full"
-      />
+      >
     </div>
   </div>
 </template>

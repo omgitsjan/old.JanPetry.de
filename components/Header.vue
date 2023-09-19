@@ -30,10 +30,10 @@ const { data: nav } = await useHeaderNav()
                     :class="
                       slot?.isActive
                         ? [
-                            'sm:bg-green-50',
-                            'text-green-800',
-                            'dark:(sm:bg-green-800/10 text-green-50)',
-                          ]
+                          'sm:bg-green-50',
+                          'text-green-800',
+                          'dark:(sm:bg-green-800/10 text-green-50)',
+                        ]
                         : []
                     "
                     class="md:(px-3 py-2) px-1 py-1 rounded"

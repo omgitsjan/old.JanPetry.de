@@ -127,8 +127,9 @@ interface LoadIconResponse {
 export const iconCollections = collections.sort((a, b) => b.length - a.length)
 
 export function tagIsIcon(tag: string) {
-  return !!iconCollections.find(i => {
-    if (!tag || !tag.startsWith('i-')) return false
+  return !!iconCollections.find((i) => {
+    if (!tag || !tag.startsWith('i-'))
+      return false
 
     return tag.substring(2).startsWith(`${i}-`)
   })
@@ -136,14 +137,15 @@ export function tagIsIcon(tag: string) {
 
 export function normaliseSvgAttrs(svg: string, icon: string) {
   // svg is possibly empty for an invalid icon
-  if (!svg) return false
+  if (!svg)
+    return false
   const $ = cheerio.load(svg)
   const options: Record<string, any> = {
     ...$('svg').attr(),
     // presume all icons are decorative
     'aria-hidden': true,
-    title: icon,
-    innerHTML: $('svg').html(),
+    'title': icon,
+    'innerHTML': $('svg').html(),
   }
   return options
 }
@@ -153,10 +155,11 @@ export async function loadIconForTag(tag: string) {
   if (tag.startsWith('i-emojione-v-1'))
     tag = tag.replace('i-emojione-v-1', 'i-emojione-v1')
 
-  if (iconCache[tag]) return iconCache[tag]
+  if (iconCache[tag])
+    return iconCache[tag]
 
   const collection = iconCollections.find(i =>
-    tag.substring(2).startsWith(`${i}-`)
+    tag.substring(2).startsWith(`${i}-`),
   )
   const icon = tag.substring(2).slice(collection.length + 1)
   const svg = await loadNodeIcon(collection, icon, {
@@ -164,10 +167,11 @@ export async function loadIconForTag(tag: string) {
     autoInstall: true,
   })
 
-  if (!svg)
+  if (!svg) {
     console.warn(
-      `Failed to find icon \`${icon}\` in collection \`${collection}\`.`
+      `Failed to find icon \`${icon}\` in collection \`${collection}\`.`,
     )
+  }
 
   const res: LoadIconResponse = {
     svgRaw: svg,

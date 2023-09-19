@@ -31,11 +31,11 @@ const repo = `https://github.com/${props.project?.repo}`
       </div>
     </div>
     <p class="text-sm opacity-90 mb-3 m-0">
-      {{ project?.description || 'placeholder' }}
+      {{ project.description || 'placeholder' }}
     </p>
     <div class="text-xs inline-flex items-center absolute top-4 right-4">
       <i-carbon-star class="inline mr-1 mb-2px" />
-      {{ project?.stars || 0 }}
+      {{ project.stars || 0 }}
     </div>
   </a>
 </template>

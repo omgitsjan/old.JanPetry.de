@@ -10,7 +10,7 @@ const totalStars = computed(() => {
       // @ts-expect-error untyped
       .map(c => c.projects)
       .flat()
-      .map(p => p.stars || 0)
+      .map((p: { stars: any }) => p.stars || 0)
       // @ts-expect-error untyped
       .reduce((acc, stars) => acc + stars, 0)
   )
@@ -45,7 +45,7 @@ defineOgImage({
         <span class="opacity-70 text-xs">and counting</span>
       </span>
     </div>
-    <div v-for="(category, cKey) in categories.body" :key="cKey">
+    <div v-for="(category, cKey) in categories?.body" :key="cKey">
       <SubTitle>
         <IconNuxt
           v-if="category.name === 'Nuxt'"

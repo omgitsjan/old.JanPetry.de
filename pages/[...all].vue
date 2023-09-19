@@ -4,6 +4,7 @@ import { useContent, useRequestEvent, useSeoMeta } from '#imports'
 const { page, layout } = useContent()
 
 // Page not found, set correct status code on SSR
+// eslint-disable-next-line n/prefer-global/process
 if (!(page as any).value && process.server) {
   const event = useRequestEvent()
   event.res.statusCode = 404

@@ -16,11 +16,12 @@ const props = withDefaults(
   }>(),
   {
     lazy: true,
-  }
+  },
 )
 
 const shiftLargeImgStyles = computed(() => {
-  if (!props.width) return {}
+  if (!props.width)
+    return {}
   if (props.width <= 812) {
     return {
       width: `${props.width}px`,
@@ -28,7 +29,7 @@ const shiftLargeImgStyles = computed(() => {
   }
   const transformX = `-${Math.round((props.width - 812) / 2)}px`
   return {
-    width: `${props.width}px`,
+    'width': `${props.width}px`,
     '--tw-translate-x': transformX,
   }
 })
@@ -49,7 +50,7 @@ const src = $img(
   },
   {
     provider,
-  }
+  },
 )
 </script>
 

@@ -10,20 +10,19 @@ import { groupBy } from '~/logic'
 
 export function useProjects() {
   return useAsyncData('content:projects', () =>
-    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne()
+    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne(),
   )
 }
 
 export function useGeneralList() {
   return useAsyncData('content:entrys', () =>
-    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne()
+    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne(),
   )
 }
 
 export function useHeaderNav() {
   return useAsyncData('content:navigation', () => fetchContentNavigation())
 }
-
 export function usePostList() {
   return useAsyncData(
     'content:post-partials',
@@ -39,17 +38,18 @@ export function usePostList() {
       // group posts by the publish year
       transform: posts =>
         groupBy(posts, p => new Date(p.publishedAt).getFullYear()),
-    }
+    },
   )
 }
 
 export function useRoutesContent<T extends Post>(path?: string) {
-  if (!path) path = useRoute().path
+  if (!path)
+    path = useRoute().path
   return useAsyncData(`content:${path}`, () =>
     queryContent<T>()
       .where({ path: new RegExp(path) })
       .without(['excerpt'])
-      .findOne()
+      .findOne(),
   )
 }
 
