@@ -18,7 +18,7 @@ const { flatUnwrap } = useUnwrap()
         v-if="checked"
         class="flex-shrink-0 w-6 h-6 !mt-1 text-emerald-500"
       />
-      <span><Markdown :use="() => item" unwrap="li" /></span>
+      <span><MDCSlot :use="() => item" unwrap="li" /></span>
     </li>
   </ul>
 </template>
