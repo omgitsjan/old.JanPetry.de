@@ -10,8 +10,12 @@ import { groupBy } from '~/logic'
 
 export function useProjects() {
   return useAsyncData('content:projects', () =>
-    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne(),
-  )
+    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne())
+}
+
+export function useGeneralList() {
+  return useAsyncData('content:entrys', () =>
+    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne())
 }
 
 export function useGeneralList() {
@@ -45,13 +49,17 @@ export function usePostList() {
 export function useRoutesContent<T extends Post>(path?: string) {
   if (!path)
     path = useRoute().path
-  return useAsyncData(`content:${path}`, () =>
-    queryContent<T>()
-      .where({ path: new RegExp(path) })
-      .without(['excerpt'])
-      .findOne(),
-  )
+  return useAsyncData(`content:${path}`, () => queryContent<T>()
+    .where({ path: new RegExp(path) })
+    .without(['excerpt'])
+    .findOne())
 }
 
 export const usePost = async (path?: string) => useRoutesContent<Post>(path)
 export const usePage = async (path?: string) => useRoutesContent<Page>(path)
+function
+  // group posts by the publish year
+  transform(input: Omit<Post, string>[]): {} {
+    throw new Error('Function not implemented.')
+}
+
