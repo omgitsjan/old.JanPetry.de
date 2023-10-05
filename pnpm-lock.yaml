@@ -47,6 +47,9 @@ devDependencies:
   '@iconify-json/noto':
     specifier: ^1.1.12
     version: 1.1.12
+  '@iconify-json/octicon':
+    specifier: ^1.1.43
+    version: 1.1.49
   '@iconify-json/ph':
     specifier: ^1.1.6
     version: 1.1.6
@@ -1341,6 +1344,12 @@ packages:
 
   /@iconify-json/noto@1.1.12:
     resolution: {integrity: sha512-PXEfpWic2yl4wg7VmlF3Kanu7MpaJD2N820SWGTNj5AOa7G8JYkENg2B0NPyuuWzrFiD+NboCjeXZSXu4oqJKg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/octicon@1.1.49:
+    resolution: {integrity: sha512-wv/uSwSkxk4O0VituCjiFkHVhKVHM7MdE4vvRmyAutK+EcBemThJlQcCJR8CX9/LdRKKboC6K0t75a/KVKdjOg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -3973,7 +3982,7 @@ packages:
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       magic-string: 0.30.3
-      postcss: 8.4.29
+      postcss: 8.4.31
       source-map-js: 1.0.2
     dev: true
 
@@ -5421,7 +5430,7 @@ packages:
       dom-serializer: 2.0.0
       domhandler: 5.0.3
       htmlparser2: 8.0.2
-      postcss: 8.4.29
+      postcss: 8.4.31
       pretty-bytes: 5.6.0
     dev: true
 
@@ -11341,15 +11350,6 @@ packages:
 
   /postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-    dev: true
-
-  /postcss@8.4.29:
-    resolution: {integrity: sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
     dev: true
 
   /postcss@8.4.31:
