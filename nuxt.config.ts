@@ -1,27 +1,28 @@
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/docus', 'nuxt-lego'],
+  ssr: false,
+  extends: ["@nuxt-themes/docus", "nuxt-lego"],
   modules: [
-    '@nuxtjs/color-mode',
-    '@vueuse/nuxt',
-    '@nuxt/image-edge',
-    'nuxt-windicss',
+    "@nuxtjs/color-mode",
+    "@vueuse/nuxt",
+    "@nuxt/image-edge",
+    "nuxt-windicss",
     // custom content modules, need to come before the content module
-    '~/app/module',
-    '~/modules/unplugin-icons',
-    '@nuxt/content',
-    '@nuxtseo/module',
-    'nuxt-link-checker',
-    'nuxt-simple-sitemap',
+    "~/app/module",
+    "~/modules/unplugin-icons",
+    "@nuxt/content",
+    "@nuxtseo/module",
+    "nuxt-link-checker",
+    "nuxt-simple-sitemap",
   ],
 
   site: {
-    name: 'Jan Petry',
-    logo: '/jan-petry.webp',
-    titleSeparator: '·',
-    url: 'https://janpetry.de/',
+    name: "Jan Petry",
+    logo: "/jan-petry.webp",
+    titleSeparator: "·",
+    url: "https://janpetry.de/",
     description:
-      'Developer, working for KÜS Data GmbH and in my free im coding a bit and playing some video games.',
-    language: 'en-US',
+      "Developer, working for KÜS Data GmbH and in my free im coding a bit and playing some video games.",
+    language: "en-US",
   },
 
   experimental: {
@@ -40,15 +41,15 @@ export default defineNuxtConfig({
     enabled: false,
   },
 
-  css: ['@/resources/scrollbars.css', '@/resources/main.scss'],
+  css: ["@/resources/scrollbars.css", "@/resources/main.scss"],
   // https://color-mode.nuxtjs.org
   colorMode: {
-    fallback: 'dark',
-    classSuffix: '',
+    fallback: "dark",
+    classSuffix: "",
   },
 
   pinceau: {
-    configFileName: 'tokens.config',
+    configFileName: "tokens.config",
     studio: false,
     debug: true,
     followSymbolicLinks: false,
@@ -56,8 +57,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Jan Petry',
-      link: [{ rel: 'preconnect', href: 'https://res.cloudinary.com' }],
+      title: "Jan Petry",
+      link: [{ rel: "preconnect", href: "https://res.cloudinary.com" }],
     },
   },
   // https://content.nuxtjs.org
@@ -67,20 +68,20 @@ export default defineNuxtConfig({
     },
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
-      theme: 'dracula',
+      theme: "dracula",
     },
   },
 
   image: {
     cloudinary: {
       baseURL:
-        'https://res.cloudinary.com/dwl1vhp3v/image/upload/v1686178087/images',
+        "https://res.cloudinary.com/dwl1vhp3v/image/upload/v1686178087/images",
       modifiers: {
-        quality: 'auto:best',
-        dpr: 'auto',
+        quality: "auto:best",
+        dpr: "auto",
       },
     },
-    domains: ['avatars0.githubusercontent.com'],
+    domains: ["avatars0.githubusercontent.com"],
   },
 
   studio: {
@@ -91,8 +92,9 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       crawlLinks: true,
-      routes: ['/', '/feed.xml', '/feed.json', '/feed.atom'],
+      routes: ["/", "/feed.xml", "/feed.json", "/feed.atom"],
     },
+    static: true,
   },
   hooks: {
     // Related to https://github.com/nuxt/nuxt/pull/22558
@@ -101,11 +103,10 @@ export default defineNuxtConfig({
     // Downside: bigger JS bundle
     // With sync: 465KB, gzip: 204KB
     // Without: 418KB, gzip: 184KB
-    'components:extend': function (components) {
+    "components:extend": function (components) {
       for (const comp of components) {
-        if (comp.global)
-          comp.global = 'sync'
+        if (comp.global) comp.global = "sync";
       }
     },
   },
-})
+});
