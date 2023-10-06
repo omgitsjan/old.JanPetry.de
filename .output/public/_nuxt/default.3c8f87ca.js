@@ -1,0 +1,1 @@
+import{k as a,c as t,e as o,a2 as s,b as c}from"./entry.90c91bc0.js";const l={},n={class:"page-layout layout-default max-w-100ch mx-auto"};function r(e,d){return c(),t("div",n,[o("main",null,[s(e.$slots,"default")])])}const _=a(l,[["render",r]]);export{_ as default};

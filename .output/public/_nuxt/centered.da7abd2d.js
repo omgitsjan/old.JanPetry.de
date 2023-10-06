@@ -1,0 +1,1 @@
+import{k as t,c as s,e as c,a2 as n,b as a}from"./entry.90c91bc0.js";const _={},d={class:"layout-single-page"};function o(e,r){return a(),s("div",d,[c("div",null,[n(e.$slots,"default",{},void 0,!0)])])}const u=t(_,[["render",o],["__scopeId","data-v-272ced78"]]);export{u as default};
