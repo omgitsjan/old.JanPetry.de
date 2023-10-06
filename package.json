@@ -13,6 +13,9 @@
     "lint": "eslint .",
     "images": "cld upload_dir images"
   },
+  "dependencies": {
+    "@vercel/analytics": "^1.0.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.17",
     "@iconify-json/bi": "^1.1.20",
@@ -62,8 +65,5 @@
     "overrides": {
       "cheerio": "1.0.0-rc.10"
     }
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.0.2"
   }
 }

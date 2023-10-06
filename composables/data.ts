@@ -1,60 +1,59 @@
-import { fetchContentNavigation, queryContent, useAsyncData } from "#imports";
+import { fetchContentNavigation, queryContent, useAsyncData } from '#imports'
 import type {
   GeneralList,
   JsonParsedContent,
   Page,
   Post,
   ProjectList,
-} from "~/types";
-import { groupBy } from "~/logic";
+} from '~/types'
+import { groupBy } from '~/logic'
 
 export function useProjects() {
-  return useAsyncData("content:projects", () =>
-    queryContent<JsonParsedContent<ProjectList>>("_projects").findOne()
-  );
+  return useAsyncData('content:projects', () =>
+    queryContent<JsonParsedContent<ProjectList>>('_projects').findOne())
 }
 
 export function useGeneralList() {
-  return useAsyncData("content:entrys", () =>
-    queryContent<JsonParsedContent<GeneralList>>("_partners").findOne()
-  );
+  return useAsyncData('content:entrys', () =>
+    queryContent<JsonParsedContent<GeneralList>>('_partners').findOne())
 }
 
 export function useHeaderNav() {
-  return useAsyncData("content:navigation", () => fetchContentNavigation());
+  return useAsyncData('content:navigation', () => fetchContentNavigation())
 }
 export function usePostList() {
   return useAsyncData(
-    "content:post-partials",
+    'content:post-partials',
     () =>
       queryContent<Post>()
         .where({ _path: /blog\/*/ })
-        .without(["head", "body", "excerpt", "_"])
+        .without(['head', 'body', 'excerpt', '_'])
         .sort({
           publishedAt: -1,
         })
         .find(),
     {
       // group posts by the publish year
-      transform: (posts) =>
-        groupBy(posts, (p) => new Date(p.publishedAt).getFullYear()),
-    }
-  );
+      transform: posts =>
+        groupBy(posts, p => new Date(p.publishedAt).getFullYear()),
+    },
+  )
 }
 
 export function useRoutesContent<T extends Post>(path?: string) {
-  if (!path) path = useRoute().path;
+  if (!path)
+    path = useRoute().path
   return useAsyncData(`content:${path}`, () =>
     queryContent<T>()
       .where({ path: new RegExp(path) })
-      .without(["excerpt"])
-      .findOne()
-  );
+      .without(['excerpt'])
+      .findOne())
 }
 
-export const usePost = async (path?: string) => useRoutesContent<Post>(path);
-export const usePage = async (path?: string) => useRoutesContent<Page>(path);
+export const usePost = async (path?: string) => useRoutesContent<Post>(path)
+export const usePage = async (path?: string) => useRoutesContent<Page>(path)
 function // group posts by the publish year
-transform(input: Omit<Post, string>[]): {} {
-  throw new Error("Function not implemented.");
+transform(input: Omit<Post, string>[],
+): {} {
+  throw new Error('Function not implemented.')
 }
