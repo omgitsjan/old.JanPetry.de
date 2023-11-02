@@ -148,7 +148,7 @@ const siteLogo = computed(() => {
       </div>
     </div>
     <div class="w-1/2 items-end justify-center">
-      <img v-if="image" :src="`https://res.cloudinary.com/dl6o1xpyq/image/upload/f_auto,q_auto:best,dpr_auto/images/${image}`" height="630" width="630" style="object-fit: cover;" class="rounded-xl max-w-full">
+      <img v-if="image" :src="`https://res.cloudinary.com/dwl1vhp3v/image/upload/f_auto,q_auto:best,dpr_auto/images/${image}`" height="630" width="630" style="object-fit: cover;" class="rounded-xl max-w-full">
     </div>
   </div>
 </template>

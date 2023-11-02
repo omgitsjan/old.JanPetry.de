@@ -7,6 +7,11 @@ settings:
 overrides:
   cheerio: 1.0.0-rc.10
 
+dependencies:
+  '@vercel/analytics':
+    specifier: ^1.1.1
+    version: 1.1.1
+
 devDependencies:
   '@antfu/eslint-config':
     specifier: 1.0.0-beta.29
@@ -56,6 +61,9 @@ devDependencies:
   '@iconify-json/simple-icons':
     specifier: ^1.1.76
     version: 1.1.76
+  '@iconify-json/uim':
+    specifier: ^1.1.5
+    version: 1.1.5
   '@iconify-json/vscode-icons':
     specifier: ^1.1.29
     version: 1.1.29
@@ -1331,6 +1339,12 @@ packages:
 
   /@iconify-json/tabler@1.1.95:
     resolution: {integrity: sha512-Qg+VpKgSImpA9g2ger17cWIBvirlixUplTXshu/miegBCfaicYEyyX2pCilCJEuujeNVh47+ySD7CoBJS2f6pQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/uim@1.1.5:
+    resolution: {integrity: sha512-AbdW0nc8LJw0L7m9hvUSxUJ1/MCE5MzU0BSlQZAqerXrZ8LeYYcMrIz185IaCB0swYCm1Eb+FNIY8A2P0o609A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -3806,6 +3820,12 @@ packages:
     transitivePeerDependencies:
       - rollup
     dev: true
+
+  /@vercel/analytics@1.1.1:
+    resolution: {integrity: sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==}
+    dependencies:
+      server-only: 0.0.1
+    dev: false
 
   /@vercel/nft@0.24.3:
     resolution: {integrity: sha512-IyBdIxmFAeGZnEfMgt4QrGK7XX4lWazlQj34HEi9dw04/WeDBJ7r1yaOIO5tTf9pbfvwUFodj9b0H+NDGGoOMg==}
@@ -12020,6 +12040,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}

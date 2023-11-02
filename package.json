@@ -1,5 +1,5 @@
 {
-  "name": "harlanzw-com",
+  "name": "janpetry-de",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@8.10.0",
@@ -30,6 +30,7 @@
     "@iconify-json/ph": "^1.1.6",
     "@iconify-json/ri": "^1.1.12",
     "@iconify-json/simple-icons": "^1.1.76",
+    "@iconify-json/uim": "^1.1.5",
     "@iconify-json/vscode-icons": "^1.1.29",
     "@nuxt-themes/docus": "^1.15.0",
     "@nuxt/content": "^2.9.0",
@@ -60,5 +61,8 @@
     "overrides": {
       "cheerio": "1.0.0-rc.10"
     }
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
   }
 }

@@ -17,8 +17,9 @@ export default defineAppConfig({
     layout: {
       fluid: false,
     },
-    title: 'Harlan Wilton',
-    description: 'Open source developer, contributing to the Vue, Nuxt, and Vite ecosystems.',
+    title: 'Jan Petry',
+    description:
+      'Developer, working for a Association for Technical Inspection and in my free im coding a bit and playing some video games.',
   },
   seoUi: {
     breadcrumb,

@@ -15,11 +15,11 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    name: 'Harlan Wilton',
-    logo: '/harlan-wilton.jpeg',
-    url: 'https://harlanzw.com/',
+    name: 'Jan Petry',
+    logo: '/jan-petry.webp',
+    url: 'https://janpetry.de/',
     description: 'Open source developer, contributing to the Vue, Nuxt, and Vite ecosystems.',
-    defaultLocale: 'en-AU',
+    defaultLocale: 'en-US',
   },
 
   experimental: {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   linkChecker: {
     enabled: false,
     excludeLinks: [
-      'https://twitter.com/harlan_zw',
+      'https://twitter.com/omgitsjan',
     ],
   },
 
@@ -60,19 +60,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Harlan Wilton',
+      title: 'Jan Petry',
       templateParams: {
         separator: '·',
       },
-      // fathom analytics
-      script: [
-        {
-          'src': 'https://idea-lets-dance.harlanzw.com/script.js',
-          'data-spa': 'auto',
-          'data-site': 'VDJUVDNA',
-          'defer': true,
-        },
-      ],
       link: [
         { rel: 'preconnect', href: 'https://res.cloudinary.com' },
       ],
@@ -91,7 +82,7 @@ export default defineNuxtConfig({
 
   image: {
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dl6o1xpyq/image/upload/images',
+      baseURL: "https://res.cloudinary.com/dwl1vhp3v/image/upload/v1686178087/images",
       modifiers: {
         quality: 'auto:best',
         dpr: 'auto',

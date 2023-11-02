@@ -1,0 +1,24 @@
+{
+  "body": [
+    {
+      "name": "Worked with",
+      "icon": "line-md:coffee-twotone-loop",
+      "entrys": [
+        {
+          "name": "MB Parkett",
+          "description": "Over years we working togehter on different projects, like the homepage or other technologie things.",
+          "link": "https://mbparkett.com/",
+          "icon": "fluent-emoji-flat:wood",
+          "since": "2018"
+        },
+        {
+          "name": "Disco Deluxe",
+          "description": "Most time we work together on music projects but sometimes also on web projects like a music wish (web-)app.",
+          "link": "http://disco-deluxe.net/",
+          "icon": "simple-icons:discogs",
+          "since": "2016"
+        }
+      ]
+    }
+  ]
+}
