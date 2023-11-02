@@ -18,11 +18,10 @@ export default defineNuxtConfig({
   site: {
     name: "Jan Petry",
     logo: "/jan-petry.webp",
-    titleSeparator: "·",
     url: "https://janpetry.de/",
     description:
       "Developer, working for KÜS Data GmbH and in my free im coding a bit and playing some video games.",
-    language: "en-US",
+      defaultLocale: "en-US",
   },
 
   experimental: {
@@ -57,8 +56,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Jan Petry",
-      link: [{ rel: "preconnect", href: "https://res.cloudinary.com" }],
+      title: 'Jan Petry',
+      templateParams: {
+        separator: '·',
+      },
+      link: [
+        { rel: 'preconnect', href: 'https://res.cloudinary.com' },
+      ],
     },
   },
   // https://content.nuxtjs.org

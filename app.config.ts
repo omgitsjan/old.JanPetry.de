@@ -19,7 +19,7 @@ export default defineAppConfig({
     },
     title: 'Jan Petry',
     description:
-      'Developer, working for KÜS Data GmbH and in my free im coding a bit and playing some video games.',
+      'Developer, working for a Association for Technical Inspection and in my free im coding a bit and playing some video games.',
   },
   seoUi: {
     breadcrumb,

@@ -39,19 +39,6 @@ const loadingType = computed(() => {
 })
 
 const provider = props.src.startsWith('https://') ? '' : 'cloudinary'
-
-const $img = useImage()
-
-const src = $img(
-  props.src,
-  {
-    height: 700,
-    format: 'auto',
-  },
-  {
-    provider,
-  },
-)
 </script>
 
 <template>
@@ -62,6 +49,8 @@ const src = $img(
   >
     <nuxt-img
       v-bind="$attrs"
+      height="700"
+      format="auto"
       :alt="alt"
       :width="width"
       :src="src"
