@@ -8,7 +8,7 @@ const year = computed(() => new Date().getFullYear())
     <Head>
       <SchemaOrgPerson
         :name="siteMeta.name"
-        image="https://res.cloudinary.com/dl6o1xpyq/image/upload/f_jpg,q_auto:best,dpr_auto,w_240,h_240/images/harlan-wilton"
+        image="https://res.cloudinary.com/dwl1vhp3v/image/upload/f_jpg,q_auto:best,dpr_auto,w_240,h_240/v1686178087/images/jan-petry"
         :same-as="siteMeta.sameAs"
       />
     </Head>
@@ -22,11 +22,6 @@ const year = computed(() => new Date().getFullYear())
         <div class="flex justify-center mb-3">
           <SocialIcons />
         </div>
-        <p class="mb-3">
-          Like this site? <NuxtLink to="https://github.com/harlan-zw/harlanzw.com">
-            Clone away.
-          </NuxtLink>
-        </p>
         <p class="mb-3">
           © {{ year }}-PRESENT {{ siteMeta.name }}. All rights reserved.
         </p>

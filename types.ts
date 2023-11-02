@@ -38,3 +38,16 @@ export interface ProjectList extends ParsedContent {
   name: string
   projects: Project[]
 }
+
+export interface GeneralList extends ParsedContent {
+  name: string
+  entrys: Entry[]
+}
+
+export interface Entry {
+  name: string
+  description: string
+  icon?: string
+  link?: string
+  since?: string
+}

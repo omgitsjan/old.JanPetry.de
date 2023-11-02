@@ -1,11 +1,11 @@
-export const SiteName = 'Harlan Wilton'
-export const SiteUrl = 'https://harlanzw.com'
-export const SiteImage = '/cover.png'
-export const SiteLogo = '/harlan-wilton.jpeg'
-export const SiteLanguage = 'en-AU'
-export const SiteTagLine = 'Open Source Developer'
-export const SiteDescription = 'Hey, I\'m Harlan, a full-stack web developer living in Sydney, Australia. I\'m passionate about building open-source packages in the Vue, Nuxt and Vite ecosystems.'
+export const SiteName = 'Jan Petry'
+export const SiteUrl = 'https://janpetry.de'
+export const SiteImage = '/jan-petry.webp'
+export const SiteLogo = '/jan-petry.webp'
+export const SiteLanguage = 'en-US'
+export const SiteTagLine = 'Developer'
+export const SiteDescription = 'Hey, Im Jan, a full-stack web developer living in Trier, Germany. Im passionate about building projects with .NET (most likly with Blazor or MVC) and Typescript (most likly with Angular, Vue or Nuxt).'
 export const SameAs = [
-  'https://twitter.com/harlan_zw',
-  'https://github.com/harlan-zw',
+  'https://twitter.com/omg_itsjan',
+  'https://github.com/omgitsjan',
 ]

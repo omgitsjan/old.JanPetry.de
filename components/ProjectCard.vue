@@ -13,7 +13,7 @@ const repo = `https://github.com/${props.project?.repo}`
   <a :href="repo" target="_blank" class="relative px-4 py-3 group rounded border-gray-200/10 border-2 hover:bg-white dark:(border-gray-800/10) dark:hover:bg-gray-800 transition-all">
     <div class="!flex">
       <div class="flex-shrink mt-2 mr-2">
-        <icon v-if="project.icon" :name="project.icon" class="w-14 h-auto opacity-70 mr-2 group-hover:opacity-75 transition-all svg-container" />
+        <icon v-if="project.icon" :name="project.icon" class="h-auto opacity-70 mr-2 group-hover:opacity-75 transition-all svg-container" />
       </div>
       <div class="flex-grow">
         <div class="mb-2">

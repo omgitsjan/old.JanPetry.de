@@ -9,7 +9,7 @@ defineProps<{ post: Post }>()
     <h1 class="text-4xl font-bold leading-25">
       {{ post.title }}
     </h1>
-    <icon v-if="post.icon" :name="post.icon" class="w-14 mb-1 h-auto opacity-50 ml-2 transition-all svg-container" />
+    <icon v-if="post.icon" :name="post.icon" class="mb-1 h-auto opacity-50 ml-2 transition-all svg-container" />
   </div>
 </template>
 
