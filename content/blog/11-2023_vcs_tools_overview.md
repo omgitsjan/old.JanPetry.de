@@ -1,9 +1,9 @@
 ---
 title: "[DE] GitHub, GitLab und Co.: Die wichtigsten Versionskontrollsysteme für Softwareentwickler"
-description: "Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
+description: "Ein detaillierter Blogartikel, der erklärt, was Versionskontrollsysteme ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
 publishedAt: "2023-11-08"
 aside: false
-excerpt: "Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
+excerpt: "Ein detaillierter Blogartikel, der erklärt, was Versionskontrollsysteme sind, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
 tags:
   - GitHub
   - GitLab
