@@ -1,15 +1,15 @@
 ---
-title: '[DE] Docker: Ein Einblick in die Container Revolution'
-description: 'Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.'
-publishedAt: '2023-07-01'
+title: "[DE] Docker: Ein Einblick in die Container Revolution"
+description: "Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
+publishedAt: "2023-07-01"
 aside: false
-excerpt: 'Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.'
+excerpt: "Ein detaillierter Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
 tags:
-    - container
-    - docker
+  - container
+  - docker
 newsletter: false
 ---
-  
+
 Docker sollte jedem Entwickler kein unbekannter Name sein. Es ist ein Name, der in Tech-Blogs zitiert, auf Konferenzen diskutiert und in Foren lebhaft debattiert wird. Aber was genau ist Docker? Warum erzeugt es so viel Aufsehen in der Entwicklergemeinschaft und warum scheint es, als ob jeder über Docker spricht? Um diese Fragen zu beantworten, müssen wir zuerst verstehen, was Docker ist und was es tut.
 
 ## Was ist Docker?
@@ -54,24 +54,24 @@ Docker hat eine Befehlszeilenschnittstelle, mit der man Images und Container ver
 
 ### Docker Beispiele als Code Snippets
 
-#### Beispiel für ein .dockerfile**
+#### Beispiel für ein .dockerfile\*\*
 
 ```bash
     # Schritt 1: Verwende ein Basis-Image mit .NET Core SDK
     FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
     WORKDIR /app
-    
+
     # Schritt 2: Kopiere den Projektcode in das Docker-Image
     COPY . ./
-    
+
     # Schritt 3: Stelle die Anwendung zusammen
     RUN dotnet publish -c Release -o out
-    
+
     # Schritt 4: Erstelle ein Runtime-Image
     FROM mcr.microsoft.com/dotnet/aspnet:7.0
     WORKDIR /app
     COPY --from=build-env /app/out .
-    
+
     # Schritt 5: Starte die Anwendung beim Starten des Containers
     ENTRYPOINT ["dotnet", "MyApp.dll"]
 ```
