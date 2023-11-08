@@ -23,6 +23,10 @@ Versionskontrolle ist wichtig aus folgenden Gründen:
 
 - **Rückverfolgbarkeit:** Versionskontrolle ermöglicht es, Änderungen an Code nachzuvollziehen. Dies kann hilfreich sein, um Fehler zu finden und zu beheben.
 
+## GitHub & GitLab im Vergleich
+
+### Funktionalität
+
 **GitHub** ist ein Open-Source-Hosting-Dienst für Git-Repositorys. Es ist das größte VCS-Hosting-Angebot der Welt und wird von Millionen von Entwicklern genutzt. GitHub bietet eine Vielzahl von Funktionen, darunter:
 
 - **Einfachheit:** GitHub ermöglicht es Entwicklern, einfach und schnell an Code zu arbeiten.
@@ -43,7 +47,9 @@ Versionskontrolle ist wichtig aus folgenden Gründen:
 
 **GitHub und GitLab sind zwei der beliebtesten VCS-Hosting-Angebote. Sie bieten eine Vielzahl von Funktionen, die die Zusammenarbeit und die Verwaltung von Code erleichtern. Die Wahl des richtigen VCS hängt von den individuellen Bedürfnissen des Entwicklers ab.**
 
-**GitLab bietet im Vergleich zu GitHub einige zusätzliche Funktionen, darunter:**
+## Vor- und Nachteile verschiedener Versionskontrollsysteme
+
+### GitLab bietet im Vergleich zu GitHub einige zusätzliche Funktionen
 
 - **Self-Hosting:** GitLab kann auf einem eigenen Server gehostet werden, wodurch die Entwickler mehr Kontrolle über die Infrastruktur und die Daten haben, generell liegt somit der Code auf der eigenen Hardware.
 
@@ -53,7 +59,7 @@ Versionskontrolle ist wichtig aus folgenden Gründen:
 
 - **CI/CD:** GitLab bietet Funktionen für die Automatisierung des Builds, der Tests und der Bereitstellung von Software.
 
-**GitHub bietet im Vergleich zu GitLab einige Vorteile, darunter:**
+### GitHub bietet im Vergleich zu GitLab einige andere Vorteile
 
 - **Einfachheit:** GitHub ist im Allgemeinen einfacher zu bedienen als GitLab, zudem muss man sich nicht um Updates und Hardware kümmern.
 
