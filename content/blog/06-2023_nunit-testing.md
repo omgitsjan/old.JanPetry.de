@@ -1,15 +1,15 @@
 ---
-title: '[DE] Einführung in das .NET Testing: Ein kleiner Überblick'
-description: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
-publishedAt: '2023-06-01'
+title: "[DE] Einführung in das .NET Testing: Ein kleiner Überblick"
+description: "Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit."
+publishedAt: "2023-06-01"
 aside: false
-excerpt: 'Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.'
+excerpt: "Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit."
 tags:
-    - testing
-    - dotnet
+  - testing
+  - dotnet
 newsletter: false
 ---
-  
+
 Mit diesem Beitrag will ich euch das Thema .NET Testing etwas näher bringen. Da die Softwareentwicklung ein fortlaufender Prozess der Verbesserung und Optimierung ist, spielt das Testing dabei eine entscheidende Rolle. Das Testen hilft uns, unser Vertrauen in den Code zu stärken, den wir schreiben, und natürlich Probleme frühzeitig zu identifizieren. Wir werden uns in diesem Beitrag auf das NUnit-Framework konzentrieren, allerdings existieren zahlreiche weitere Testing-Frameworks in .NET, welche vergleichbare Ansätze verfolgen.
 
 ## .NET Testing Frameworks: NUnit und mehr
@@ -26,14 +26,10 @@ In .NET können Attribute dazu verwendet werden, zusätzliche Informationen zu C
 
 In .NET wird das Konzept der Attribute durch den Einsatz von eckigen Klammern dargestellt. Ein Attribut kann Parameter haben und kann auf verschiedene Codeelemente angewendet werden. Beispielsweise kann das `[Required]` Attribut dazu verwendet werden, anzugeben, dass eine Eigenschaft für das Model in einer Form erforderlich ist.
 
-Hier ein kleines Beispiel:
-*INSERT PICTURE*
-
-  
-
 ## Der Einsatz von Attributen im Testing
 
--   `[Test]`: Dieses Attribut wird genutzt, um eine Methode als Testmethode zu markieren.
+- `[Test]`: Dieses Attribut wird genutzt, um eine Methode als Testmethode zu markieren.
+
 ```csharp
 [Test]
 public void Sollte_Wahr_Sein()
@@ -41,23 +37,24 @@ public void Sollte_Wahr_Sein()
     Assert.IsTrue(true);
 }
 ```
--   `[SetUp]` und `[TearDown]`: Diese Attribute werden verwendet, um Methoden zu kennzeichnen, die jeweils vor und nach jedem Test ausgeführt werden sollen. Sie sind besonders nützlich für die Initialisierung und Bereinigung von Testdaten.
 
+- `[SetUp]` und `[TearDown]`: Diese Attribute werden verwendet, um Methoden zu kennzeichnen, die jeweils vor und nach jedem Test ausgeführt werden sollen. Sie sind besonders nützlich für die Initialisierung und Bereinigung von Testdaten.
 
 ```csharp
-[SetUp] 
-public void SetUp() 
-{ 
-	// Initialisierungscode hier... 
-} 
+[SetUp]
+public void SetUp()
+{
+ // Initialisierungscode hier...
+}
 
-[TearDown] 
-public void TearDown() { 
-	// Bereinigungscode hier... 
-} 
+[TearDown]
+public void TearDown() {
+ // Bereinigungscode hier...
+}
 ```
 
--   `[TestCase(...)]`: Dieses Attribut ist sehr hilfreich und ermöglicht es, mehrere Testfälle für die gleiche Methode zu definieren. Es erlaubt uns, verschiedene Eingabewerte und erwartete Ausgabewerte anzugeben, was die Wiederverwendung von Testcode erleichtert.
+- `[TestCase(...)]`: Dieses Attribut ist sehr hilfreich und ermöglicht es, mehrere Testfälle für die gleiche Methode zu definieren. Es erlaubt uns, verschiedene Eingabewerte und erwartete Ausgabewerte anzugeben, was die Wiederverwendung von Testcode erleichtert.
+
 ```csharp
 [TestCase(5, 10, 15)]
 [TestCase(7, 3, 10)]
@@ -67,58 +64,60 @@ public void Sollte_Summe_Berechnen(int a, int b, int erwarteteSumme)
     Assert.AreEqual(erwarteteSumme, tatsaechlicheSumme);
 }
 ```
+
 In diesem Fall führen wir denselben Test mit verschiedenen Eingabewerten aus und erwarten verschiedene Ergebnisse.
 
 ## Wie sieht so ein Test aus?
 
 Bevor wir uns ein Test anschauen können, müssen wir verstehen wie Tests aufgebaut sind. Dazu nutzen wir das AAA-Modell (Arrange, Act, Assert), es ist eine übersichtliche und effektive Methode zur Strukturierung von Unit-Tests, die weit verbreitet ist, nicht nur in .NET, sondern in der gesamten Softwareentwicklung ist dies überall zu finden.
 
-  
-
-**Arrange (Vorbereiten)**
+### Arrange (Vorbereiten)
 
 Dieser Teil beinhaltet die Einrichtung der Bedingungen für den Test. Hier erstellen Sie die nötigen Objekte, setzen die richtigen Werte und bereiten alle Ressourcen vor, die für den Test benötigt werden. Es ist der Ort, an dem Sie das Szenario für den Test „arrangieren“.
 
 Beispiel:
+
 ```csharp
 var controller = new HomeController(); var expectedViewName = "Index";
 ```
-  
 
-**Act (Handeln)**
+### Act (Handeln)
 
 Der "Act"-Abschnitt des Tests führt die Aktion aus, die getestet werden soll. Im Allgemeinen handelt es sich hierbei um den Aufruf einer Methode oder Funktion mit den im "Arrange"-Abschnitt erstellten Objekten.
 
 Beispiel:
+
 ```csharp
 var result = controller.Index() as ViewResult;
 ```
-  
 
-**Assert (Prüfen)**
+### Assert (Prüfen)
 
 Der letzte Abschnitt, "Assert", überprüft, ob das Ergebnis der "Act"-Phase mit den erwarteten Ausgaben übereinstimmt. Hier kommen die Assert-Methoden der Testbibliothek zum Einsatz, die in .NET durch das NUnit bereitgestellt werden.
 
 Beispiel:
+
 ```csharp
 Assert.IsNotNull(result); Assert.AreEqual(expectedViewName, result.ViewName);
 ```
+
 ## Test im echten Code als Beispiel
 
 Hier handelt es sich um einen einfachen Test, der für eine bestimme, Anwendung die Assembly Version nimmt und diesen im Frontend anzeigt. Das ganze läuft über einen selbstgeschrieben Service. Wie man gleich im Code sehen kann, hat dieser Service auch schon einen Fall back.
+
 ```csharp
 public string GetAssemblyVersion()
 {
-	var assembly = Assembly.GetExecutingAssembly();
-	var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
-	var version = fileVersionInfo.FileVersion;
+ var assembly = Assembly.GetExecutingAssembly();
+ var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
+ var version = fileVersionInfo.FileVersion;
 
-	return version ?? "Unbekannte Version";
+ return version ?? "Unbekannte Version";
 }
 ```
-  
 
 Jetzt wissen wir natürlich nicht, ob das ganze auch nach etlichen Änderungen am Code oder vielleicht sogar am Assembly selbst, immer noch funktioniert. Und da kommen nun diese Tests hier ins Spiel. Der Assembly ist natürlich eine etwas schwieriger zu testende Komponente und wir mussten mit DI einen Provider über unseren Service legen, das soll uns aber erstmal nicht weiter stören, da wir uns ja nur auf die Tests an sich konzentrieren möchten.
+
 ```csharp
     [TestFixture]
     public class AppInfoServiceTests
@@ -148,14 +147,8 @@ Jetzt wissen wir natürlich nicht, ob das ganze auch nach etlichen Änderungen a
         }
     }
 ```
-  
 
-Das ist also jetzt unser Test. Test sollen in der Regel einfach gelesen werden. Hier kann man also gut sehen, dass wir zuerst alles vorbereiten. Den AppInfoService initialisieren und danach überprüfen, ob das, was wir hereingeben, auch so herauskommt, dass es für uns passt. In der Oberfläche von Visual Studio sieht das ganze dann so aus:
-*INSERT PICTURE*
-
-
-Wenn ich nun extra einen Fehler einbaue und der Test fehlschlägt, sieht das ganze wie folgt aus:
-*INSERT PICTURE*
+Das ist also jetzt unser Test. Test sollen in der Regel einfach gelesen werden. Hier kann man also gut sehen, dass wir zuerst alles vorbereiten. Den AppInfoService initialisieren und danach überprüfen, ob das, was wir hereingeben, auch so herauskommt, dass es für uns passt. Wenn ich nun extra einen Fehler einbaue und der Test fehlschlägt, erscheint es Rot.
 
 ## Der Wert des Testings
 
@@ -165,8 +158,6 @@ Mit Testen stellen wir sicher, dass unser Code die erwartete Funktionalität lie
 
 Softwaretests sind in der Theorie ein strukturierter, klarer Prozess, unterstützt durch Tools wie NUnit und diverse Testarten. Zudem möchte man natürlich eine hohe, wenn nicht 100 % Abdeckung von seinem Code. In der Praxis jedoch werden wir mit komplexen Abhängigkeiten, Wartungsaufwand und Zeitdruck konfrontiert. Trotz dieser Herausforderungen ist das Praxistesten essenziell, um qualitativ hochwertige Software zu liefern. Selbst wenn es am Ende nur 30 % Abdeckung sind oder es aus Gründen nur wenige Tests sind, bringt uns jeder Test in der Praxis näher an das Ziel von allen: stabile und zuverlässige Software.
 
-  
-
 Wichtig zu erwähnen ist noch, dass wir oft hören, dass Code-Duplizierung vermieden werden sollte. Dieser Grundsatz, bekannt als DRY-Prinzip (Don't Repeat Yourself), ist ein Kernkonzept guter Programmierpraxis. Aber gilt das auch für unsere Tests? Interessanterweise nicht unbedingt. Beim Schreiben von Tests kann ein gewisses Maß an Duplizierung sogar von Vorteil sein. Tests sollen in erster Linie klar und leicht zu verstehen sein. Wenn das Verallgemeinern von Tests zu komplexem Code führt, der schwer zu lesen und zu verstehen ist, dann ist das kontraproduktiv. Schließlich möchten wir, dass jeder Test so einfach wie möglich ist, damit Fehler leicht identifiziert und behoben werden können. Zudem möchten wir, dass die Tests unabhängig voneinander sind, Methoden zu verallgemeiner bedeutet auch ggf. Abhängigkeiten einzubauen.
 
 ## Schlussfolgerung
@@ -174,8 +165,6 @@ Wichtig zu erwähnen ist noch, dass wir oft hören, dass Code-Duplizierung vermi
 Das war eine grundlegende Einführung in das .NET Testing, wobei der Schwerpunkt hier auf dem NUnit-Framework lag. Es ist wichtig zu betonen, dass das Erlernen und Anwenden von Testpraktiken ein fortlaufender Prozess ist und dass die bestehenden .NET Testframeworks viel mehr bieten als hier beschrieben wurde.
 
 Es sollte unser Ziel sein, stets besseren und sichereren Code zu schreiben, und das Erlernen und Anwenden von Testing-Techniken ist ein wichtiger Schritt auf diesem Weg.
-
-  
 
 Weitere Quellen:
 
