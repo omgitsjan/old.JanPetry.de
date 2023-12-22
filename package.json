@@ -1,5 +1,5 @@
 {
-  "name": "harlanzw-com",
+  "name": "janpetry-de",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@8.12.0",
@@ -30,6 +30,7 @@
     "@iconify-json/ph": "^1.1.8",
     "@iconify-json/ri": "^1.1.16",
     "@iconify-json/simple-icons": "^1.1.83",
+    "@iconify-json/uim": "^1.1.9",
     "@iconify-json/vscode-icons": "^1.1.31",
     "@nuxt-themes/docus": "^1.15.0",
     "@nuxt/content": "^2.9.0",

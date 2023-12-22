@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     name: 'Jan Petry',
     logo: '/jan-petry.webp',
     url: 'https://janpetry.de/',
-    description: 'Open source developer, contributing to the Vue, Nuxt, and Vite ecosystems.',
+    description: 'Full stack developer, doing things with Vue, Nuxt, and .NET ecosystems.',
     defaultLocale: 'en-US',
   },
 

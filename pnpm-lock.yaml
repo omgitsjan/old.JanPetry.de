@@ -56,6 +56,9 @@ devDependencies:
   '@iconify-json/simple-icons':
     specifier: ^1.1.83
     version: 1.1.83
+  '@iconify-json/uim':
+    specifier: ^1.1.9
+    version: 1.1.9
   '@iconify-json/vscode-icons':
     specifier: ^1.1.31
     version: 1.1.31
@@ -1625,6 +1628,12 @@ packages:
 
   /@iconify-json/tabler@1.1.101:
     resolution: {integrity: sha512-wRDlMXc5vXTqwVPb7Tn/tR3Jx7CtzxqMicUv8JbQ5Cwe80ez3QmvGBCfkZgaVLioChM5KalVDZo6YX0UpxvoJg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/uim@1.1.9:
+    resolution: {integrity: sha512-mV9Ps5WkLbPsk/Nztxye2TBCpEDIkeMtXXgYRgtfQve8kY0DkMF/je+YCvfd59IzXACZ6JwNAsPeF7fCYzPP+w==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
