@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtseo/module',
     'nuxt-link-checker',
     'nuxt-simple-sitemap',
+    '@nuxthq/studio'
   ],
 
   site: {

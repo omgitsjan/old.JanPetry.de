@@ -35,6 +35,7 @@
     "@nuxt-themes/docus": "^1.15.0",
     "@nuxt/content": "^2.9.0",
     "@nuxt/image-edge": "1.0.0-rc.3-28295355.7bb0b3c",
+    "@nuxthq/studio": "^1.0.12",
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/critters": "^0.5.2",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
