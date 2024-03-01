@@ -60,5 +60,8 @@
     "overrides": {
       "cheerio": "1.0.0-rc.10"
     }
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2"
   }
 }
