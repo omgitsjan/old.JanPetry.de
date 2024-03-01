@@ -1,9 +1,9 @@
 ---
-title: "[DE] Docker: Ein Einblick in die Container Revolution"
-description: "Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
-publishedAt: "2023-07-01"
+title: '[DE] Docker: Ein Einblick in die Container Revolution'
+description: Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.
+publishedAt: '2023-07-01'
 aside: false
-excerpt: "Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert."
+excerpt: Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.
 tags:
   - container
   - docker

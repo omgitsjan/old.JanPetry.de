@@ -1,9 +1,9 @@
 ---
-title: "[DE] DJ-Workshop für Jugendliche im Haus der Jugend Konz"
-description: "Ein spannender Blogartikel über die Organisation eines DJ-Workshops für Jugendliche, der Technologie und Musik im Haus der Jugend Konz kombiniert."
-publishedAt: "2023-12-22"
+title: '[DE] DJ-Workshop für Jugendliche im Haus der Jugend Konz'
+description: Ein spannender Blogartikel über die Organisation eines DJ-Workshops für Jugendliche, der Technologie und Musik im Haus der Jugend Konz kombiniert.
+publishedAt: '2023-12-22'
 aside: false
-excerpt: "Ein Einblick in die Planung eines DJ-Workshops für Jugendliche, der Technologie und Musik verbindet und im Haus der Jugend Konz stattfinden wird."
+excerpt: Ein Einblick in die Planung eines DJ-Workshops für Jugendliche, der Technologie und Musik verbindet und im Haus der Jugend Konz stattfinden wird.
 tags:
   - DJing
   - Musiktechnologie
