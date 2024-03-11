@@ -13,7 +13,7 @@ tags:
 newsletter: true
 ---
 
-In der Welt der Softwareentwicklung, wo ich normalerweise über Programmierung und Technik schreibe, ist es immer aufregend, wenn ich mein Wissen und meine Leidenschaft mit der jüngeren Generation teilen kann. Dieses Mal geht es um Musik – genauer gesagt um DJing.
+In der Welt der Softwareentwicklung, wo ich normalerweise über Programmierung und Technik schreibe, ist es immer aufregend, wenn ich mein Wissen und meine Leidenschaft mit der jüngeren Generation teilen kann. Dieses Mal geht es um Musik - genauer gesagt um DJing.
 
 ## Warum ein DJ-Workshop für Jugendliche?
 
@@ -36,4 +36,14 @@ Weitere Informationen zur Anmeldung und zum Workshop-Programm werden bald folgen
 
 Bleibt dran für Updates!
 
-Link zur Workshop Anmeldung folgt...
+Link zur Workshop (anmeldung abgelaufen): https://www.junetko.de/
+
+## Update
+
+Wir sind mitten im DJ-Workshop, und auch wenn es weniger Teilnehmer sind, als wir uns erhofft hatten, finde ich, dass es ein Erfolg ist. Ein Teilnehmer, Emil, schlägt sich hervorragend und hat nun nicht nur theoretisches Wissen, sondern kann auch schon alleine hinter den Decks stehen und Übergänge zaubern. Genau so, wie man sich das vorgestellt hat. In den letzten paar Terminen werden wir nun etwas exotischer werden und auch eine Stunde mit Vinyl auflegen. Wir werden weg von meinem DDJ-SX2 gehen und hin zu einem NX2-Set, um auch die großen Geräte einmal "bedienen" zu können.
+
+Das Ganze ist ein Herzensprojekt von mir, da ich mich langsam aus dem DJ-Geschäft etwas zurückziehe und mich mehr meiner Hauptleidenschaft, dem Programmieren, widme.
+
+Hiernach gibt es noch einmal ein finales Update und ein Fazit. Danke fürs Lesen bis hierher!
+
+_Jan_
