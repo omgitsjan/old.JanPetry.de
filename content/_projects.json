@@ -36,33 +36,27 @@
         {
           "name": "IanPRTZ.de",
           "repo": "omgitsjan/IanPRTZ.de",
-          "description": "My old DJ Website written in Angular. Its now its rewritten in Wordpress.",
+          "description": "My private old DJ Website written in Angular. Its now its rewritten in Wordpress.",
           "link": "https://ianprtz.de/",
           "icon": "ic:round-terminal"
         },
         {
           "name": "JPProfessionals.de",
           "repo": "JPProfessionals/jpp-homepage",
-          "description": "Private Nuxt3 Project, you can find the website under jpprofessionals.de.",
+          "description": "Private Nuxt 3 Project, you can find the Website under jpprofessionals.de.",
           "link": "https://jpprofessionals.de/",
           "icon": "game-icons:laser-burst"
         },
         {
           "name": "JPP Backend",
           "repo": "JPProfessionals/jpp-backend",
-          "description": "Private Nuxt3 Project, more will be revealed soon...",
+          "description": "Private Direcuts Backend, we are using it for many of our Projects",
           "icon": "lucide:triangle"
         },
         {
-          "name": "JPP Frontend",
-          "repo": "JPProfessionals/jpp-frontend",
-          "description": "Private Nuxt3 Project, more will be revealed soon...",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "GTA Higher Lower",
-          "repo": "JPProfessionals/gtahigherlower",
-          "description": "Private Vue.JS Project, more will be revealed soon...",
+          "name": "Domain Checker",
+          "repo": "JPProfessionals/domain-checker",
+          "link": "https://domain.jpprofessionals.de/",
           "icon": "lucide:triangle"
         }
       ]
@@ -77,10 +71,9 @@
           "icon": "ic:round-terminal"
         },
         {
-          "name": "MB Parkett",
-          "repo": "xXDaniel1109Xx/mb_parkett",
-          "description": "Old Website for one of our cusomter from Luxenbourg. This project was made in PHP and is no longer maintained.",
-          "link": "https://mbparkett.com/",
+          "name": "My Portfolio",
+          "description": "Find more Projects in our Portfolio on JPProfessionals.de.",
+          "link": "https://jpprofessionals.de/projects/",
           "icon": "ic:round-terminal"
         }
       ]
@@ -100,47 +93,17 @@
           "icon": "lucide:triangle"
         },
         {
-          "name": "ArchiSteamFarm",
-          "repo": "JustArchiNET/ArchiSteamFarm",
-          "icon": "lucide:triangle"
-        },
-        {
           "name": "Pi.Alert",
           "repo": "jokob-sk/Pi.Alert",
           "icon": "lucide:triangle"
         },
         {
-          "name": "More in my GitHub Lists",
-          "link": "https://github.com/omgitsjan?tab=stars",
+          "name": "My GitHub Lists",
+          "desc": "Find more tools and interesting things in my GitHub Star Lists",
+          "link": "https://github.com/stars/omgitsjan/lists/utilities",
           "icon": "lucide:triangle"
         }
       ]
     },
-    {
-      "name": "Utilities",
-      "icon": "fluent:window-dev-tools-16-filled",
-      "projects": [
-        {
-          "name": "VSCode",
-          "repo": "microsoft/vscode",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "Spotify Downloader",
-          "repo": "spotDL/spotify-downloader",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "Website Downloader",
-          "repo": "omgitsjan/Website-downloader",
-          "icon": "lucide:triangle"
-        },
-        {
-          "name": "Developer Roadmap",
-          "repo": "kamranahmedse/developer-roadmap",
-          "icon": "ic:twotone-route"
-        }
-      ]
-    }
   ]
 }
