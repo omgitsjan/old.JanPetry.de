@@ -4,14 +4,14 @@
   "private": true,
   "packageManager": "pnpm@8.12.0",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "deploy:netlify-edge": "NITRO_PRESET=netlify-edge nuxi build && npx netlify deploy",
-    "deploy:netlify": "NITRO_PRESET=netlify-edge nuxi build && npx netlify deploy",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "images": "cld upload_dir images"
+    "images": "cld upload_dir images",
+    "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.4.4",
