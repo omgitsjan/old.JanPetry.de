@@ -1,8 +1,7 @@
 {
   "name": "janpetry-de",
-  "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.12.0",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,7 +9,6 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "images": "cld upload_dir images",
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {

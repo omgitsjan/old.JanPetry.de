@@ -23,16 +23,8 @@ export default defineNuxtConfig({
     defaultLocale: 'en-US',
   },
 
-  experimental: {
-    headNext: true,
-  },
-
   devtools: {
     enabled: true,
-
-    timeline: {
-      enabled: true,
-    },
   },
 
   linkChecker: {
@@ -92,10 +84,6 @@ export default defineNuxtConfig({
     domains: [
       'avatars0.githubusercontent.com',
     ],
-  },
-
-  studio: {
-    enabled: false,
   },
 
   nitro: {
