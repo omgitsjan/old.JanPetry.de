@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@nuxtseo/module',
     'nuxt-link-checker',
     'nuxt-simple-sitemap',
-    '@nuxthq/studio'
+    '@nuxthq/studio',
+    "@nuxthub/core"
   ],
 
   site: {
@@ -105,7 +106,7 @@ export default defineNuxtConfig({
     // Downside: bigger JS bundle
     // With sync: 465KB, gzip: 204KB
     // Without: 418KB, gzip: 184KB
-    'components:extend': function (components) {
+    'components:extend': function (components: any) {
       for (const comp of components) {
         if (comp.global)
           comp.global = 'sync'
