@@ -12,7 +12,7 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.4.4",
+    "@antfu/eslint-config": "2.16.1",
     "@iconify-json/bi": "^1.1.21",
     "@iconify-json/carbon": "^1.1.25",
     "@iconify-json/emojione": "^1.1.9",
@@ -36,7 +36,7 @@
     "@nuxthq/studio": "^1.0.12",
     "@nuxthub/core": "^0.5.14",
     "@nuxtjs/color-mode": "^3.3.2",
-    "@nuxtjs/critters": "^0.5.2",
+    "@nuxtjs/critters": "^0.7.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtseo/module": "2.0.0-beta.50",
     "@vue/repl": "^3.0.0",
@@ -44,7 +44,7 @@
     "@vueuse/nuxt": "^10.7.0",
     "eslint": "^8.55.0",
     "feed": "^4.2.2",
-    "nuxt": "3.8.2",
+    "nuxt": "3.11.2",
     "nuxt-icon": "^0.6.7",
     "nuxt-lego": "^0.0.14",
     "nuxt-windicss": "^2.6.1",
