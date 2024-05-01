@@ -42,7 +42,7 @@
     "@vue/repl": "^3.0.0",
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.7.0",
-    "eslint": "^8.55.0",
+    "eslint": "^9.0.0",
     "feed": "^4.2.2",
     "nuxt": "3.11.2",
     "nuxt-icon": "^0.6.7",
